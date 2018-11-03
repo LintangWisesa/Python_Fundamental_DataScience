@@ -1,0 +1,10 @@
+
+1. instalasi
+	- python 3
+	- pycharm (jetbrains.com/pycharm)
+	  IDE khusus python!
+	- VScode jg bisa, add Python extension & pilih intrepeter: python 3 
+	- instal pylint linter (ctrl+shift+p -> python: select linter = pylint)
+	
+2. jalankan python di terminal
+    $ py namaFile.py
