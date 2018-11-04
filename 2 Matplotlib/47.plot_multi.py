@@ -9,9 +9,12 @@ z = [10, 5, 0]
 plt.plot(x,y)
 plt.plot(x,z)
 
-plt.title('Tes Plotting Data')
+plt.title('Tes Plotting Data\nby Lintang Wisesa')
 plt.xlabel('Nilai x')
 plt.ylabel('Nilai y dan z')
-plt.legend(['Ini y', 'Ini z'])
+plt.legend(['Garis x-y', 'Garis x-z'])
 
 plt.show()
+
+# plt.plot(x, y, color='m', label='Tes', linewidth=5)
+# plt.legend()
