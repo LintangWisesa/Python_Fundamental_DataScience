@@ -8,3 +8,34 @@
 	
 2. jalankan python di terminal
     $ py namaFile.py
+
+===============================================================================
+
+install python via chocolatey:
+
+1. install chocolatey (homebrew nya windows)
+	- run CMD sbg admin
+	- execute teks berikut:
+
+	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+	- jika sudah, coba run di terminal manapun (termasuk di vscode):
+		$ choco
+
+2. install python via choco
+	- $ choco install python
+	- $ python --version
+	Di VS code jangan lupa pilih intrepeter yg sesuai
+	CTRL + SHIFT + P -> Python: Select Interpreter
+	pilih Python 3 (yg sesuai)
+
+3. update pip
+	- $ python -m pip install -U pip setuptools
+
+====================================================================
+
+install package
+
+1. $ pip install numpy
+
+2. $ pip install matplotlib
