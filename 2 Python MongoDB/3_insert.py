@@ -5,6 +5,7 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["py_mongo"]
 mycol = mydb["users"]
 
-print(myclient.list_database_names())
+mydata = { "nama": "Andi", "usia": "27" }
+x = mycol.insert_one(mydata)
 
-# db & col akan terlihat setelah ada data isiannya
+print(myclient.list_database_names())
