@@ -1,0 +1,6 @@
+import pymongo
+
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+
+# get all db name = show dbs
+print(myclient.list_database_names())
