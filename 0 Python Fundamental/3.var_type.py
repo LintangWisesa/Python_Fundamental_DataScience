@@ -10,3 +10,8 @@ bobot = 78.90
 jomblo = True
 print(bobot)
 print(jomblo)
+
+print(type('Andi'))
+print(type(23))
+print(type(True))
+print(type(23.5))
