@@ -9,3 +9,7 @@ print(kawan[0:2])
 
 print(kawan.index('Caca'))
 print(kawan.count('Caca'))
+
+print(kawan[0::2])
+print(kawan[1::2])
+print(kawan[1:3:2]) # list[start:stop:step]
