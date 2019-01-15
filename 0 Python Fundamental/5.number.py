@@ -14,8 +14,8 @@ num = -102.9
 print(abs(num))
 print(pow(3, 2))
 
-print(max(4, 6))
-print(min(4, 6))
+print(max(4, 6, 8))
+print(min(4, 6, 8))
 
 print(round(3.2))
 print(round(3.9))
