@@ -31,4 +31,21 @@ print(namaBulan.get('11'))
 print(namaBulan.get('13'))
 print(namaBulan.get('14', 'Maaf, data tidak ditemukan'))
 
-print(namaHari.get(1))
+# change value
+namaBulan[2] = 'February'
+print(namaBulan[2])
+
+# add item
+namaBulan[13] = 'Xpander'
+print(namaBulan)
+
+# update
+namaBulan.update({13: 'Xpanda'})
+print(namaBulan)
+
+# remove an item
+namaBulan.pop(13)
+print(namaBulan)
+
+del namaBulan[2]
+print(namaBulan)
