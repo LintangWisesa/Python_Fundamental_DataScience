@@ -19,6 +19,9 @@ print(mobil)
 angka.pop()
 print(angka)
 
+angka.pop(2)
+print(angka)
+
 angka.sort()
 print(angka)
 
