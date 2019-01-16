@@ -2,9 +2,12 @@
 # string, number & boolean
 
 nama = "Andi"
-print('Halo namaku ' + nama + '.')
+usia = 21
+print('Halo namaku ' + nama + ', usiaku ' + str(usia))
+
 nama = 'Budi'
-print('Aku suka nama ' + nama + '.')
+usia = 23
+print('Hai, aku', nama, 'umur ', usia)
 
 bobot = 78.90
 jomblo = True

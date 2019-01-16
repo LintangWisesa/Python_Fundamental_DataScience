@@ -1,6 +1,6 @@
-no1 = float(input('Masukkan angka 1: '))
-op = input('Masukkan operator: ')  #  +  -  *  /
-no2 = float(input('Masukkan angka 2: '))
+no1 = float(input('Masukkan angka 1 : '))
+op = input('Masukkan operator : ( + - * / ) ')  #  +  -  *  /
+no2 = float(input('Masukkan angka 2 : '))
 
 if op == '+':
     print(no1 + no2)
