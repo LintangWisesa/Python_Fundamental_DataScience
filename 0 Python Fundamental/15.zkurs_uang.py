@@ -1,17 +1,19 @@
 
-# konverter Rp IDR <=> $ USD
-# nilai = nilai uang
-# konversi = 'USD-IDR' / 'IDR-USD' 
+datakurs = {
+    'USD-IDR': 14000,
+    'IDR-USD': 0.00007,
+}
 
-def konversi(nilai, konversi):
-    if konversi == 'USD-IDR':
-        kurs = 14000
+def konversi(nilai, metode):
+    if metode == 'USD-IDR':
+        kurs = datakurs[metode]
         print('USD', nilai, 'setara = IDR', nilai * kurs)
-    elif konversi == 'IDR-USD':
-        kurs = 0.00007
+    elif metode == 'IDR-USD':
+        kurs = datakurs[metode]
         print('IDR', nilai, 'setara = USD', nilai * kurs)
     else:
-        print('Mohon maaf, hanya bisa konversi USD <=> IDR')
+        print('Mohon maaf, hanya melayani USD <=> IDR')
 
 konversi(2, 'USD-IDR')
-konversi(14000, 'IDR-USD')
+konversi(200000, 'IDR-USD')
+konversi(3, 'USD-JPY')
