@@ -1,10 +1,11 @@
-
 datakurs = {
     'USD-IDR': 14000,
     'IDR-USD': 0.00007,
 }
 
-def konversi(nilai, metode):
+def konversi():
+    metode = input('Silakan masukkan metode konversi : ')
+    nilai = float(input('Silakan masukkan nominal : '))
     if metode == 'USD-IDR':
         kurs = datakurs[metode]
         print('USD', nilai, 'setara = IDR', nilai * kurs)
@@ -14,6 +15,4 @@ def konversi(nilai, metode):
     else:
         print('Mohon maaf, hanya melayani USD <=> IDR')
 
-konversi(2, 'USD-IDR')
-konversi(200000, 'IDR-USD')
-konversi(3, 'USD-JPY')
+konversi()
