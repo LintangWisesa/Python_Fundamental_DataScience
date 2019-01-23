@@ -41,3 +41,7 @@ install package
 2. $ pip install matplotlib
 
 3. $ pip install pandas
+
+atau 
+
+4. $ py -m pip install namaPackages
