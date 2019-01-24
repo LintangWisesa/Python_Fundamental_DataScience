@@ -2,7 +2,7 @@
 # 'a' append : add element to the end of the file
 # 'w' write : overwrite the entire file or create a new file
 
-file = open('26.karyawan.txt', 'a')
+file = open('28.karyawan.txt', 'a')
 file.write('\nEuis - Staf Marcomm')
 file.close()
 
