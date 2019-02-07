@@ -1,3 +1,6 @@
+# pip install pymongo
+# py -m pip install pymongo
+
 import pymongo
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")

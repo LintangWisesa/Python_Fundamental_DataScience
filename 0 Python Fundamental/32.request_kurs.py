@@ -65,7 +65,9 @@ def kurs():
         nominal = input('Silakan input nominal uang yang akan dikonversi : US$. ')
         link = 'https://blockchain.info/tobtc?currency=USD&value='
         data = requests.get(link+nominal).json()
+        kursBtc = requests.get(link+'1').json()
         print('Hasil konversi US$', nominal, 'adalah BTC', data)
+        print('Dengan kurs US$ 1 =', kursBtc)
     else:
         print('Maaf layanan tidak tersedia')
 

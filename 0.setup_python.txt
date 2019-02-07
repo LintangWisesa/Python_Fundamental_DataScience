@@ -36,8 +36,7 @@ install python via chocolatey:
 
 install package
 
-1. $ pip install numpy
-
+1. $ pip
 2. $ pip install matplotlib
 
 3. $ pip install pandas
