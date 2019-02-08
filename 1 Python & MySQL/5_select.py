@@ -4,7 +4,7 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="lintang",
   passwd="12345",
-  database="py_mysql"
+  database="datascience"
 )
 
 mycursor = mydb.cursor()

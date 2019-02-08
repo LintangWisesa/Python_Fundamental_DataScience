@@ -11,3 +11,10 @@ mydoc = mycol.find(myquery)
 
 for x in mydoc:
   print(x)
+
+# find data yg harga > 1000000
+myquery = { "harga": {"$gt": 1000000} }
+mydoc = mycol.find(myquery)
+
+for x in mydoc:
+  print(x)

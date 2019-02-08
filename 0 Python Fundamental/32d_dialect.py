@@ -10,3 +10,4 @@ with open('32a2.csv', 'r') as csvFile:
         print(row)
 
 csvFile.close()
+print(csv.list_dialects())
