@@ -6,8 +6,9 @@ x = [1,2,3]
 y = [1,4,9]
 z = [10, 5, 0]
 
-plt.plot(x,y)
-plt.plot(x,z)
+plt.plot(x,y,'o')
+plt.plot(x,z,'*')
+# marker 'o' '*'
 
 plt.title('Tes Plotting Data\nby Lintang Wisesa')
 plt.xlabel('Nilai x')
