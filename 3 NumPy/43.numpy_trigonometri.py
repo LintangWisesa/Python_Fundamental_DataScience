@@ -8,3 +8,6 @@ z = np.cos(0)
 
 print(y)
 print(z)
+
+y = np. sin(2 * 180 / np.pi)
+print(y)

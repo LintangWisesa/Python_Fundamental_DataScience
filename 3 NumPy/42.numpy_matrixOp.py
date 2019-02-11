@@ -11,5 +11,3 @@ print(a/b)
 
 print(np.vstack((a,b)))
 print(np.hstack((a,b)))
-
-print(a.ravel())
