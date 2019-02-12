@@ -6,4 +6,6 @@ import numpy as np
 
 a = np.array([(1,2),(3,4)])
 
-print(np.linalg.det(a))
+# ada problem di numpy determinant,
+# maka harus di-round-kan
+print(round(np.linalg.det(a)))
