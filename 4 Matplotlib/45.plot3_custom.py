@@ -14,8 +14,8 @@ plt.ylabel('Nilai y')
 plt.fill_between(x, y, 0)
 # plt.fill_between(x, y, 0, facecolor='g', alpha=0.3)
 # plt.fill_between(x, y, 5, alpha=0.3)
-# plt.fill_between(x, y[3], 0, facecolor='g', alpha=0.3)
-# plt.fill_between(x, y[8], y[3], facecolor='r', alpha=0.3)
+# plt.fill_between(x, y[3], 0, facecolor='g', alpha=0.3)        # y[3] = batas bawahnya y elemen ke-3
+# plt.fill_between(x, y[8], y[3], facecolor='r', alpha=0.3)     # y[8] = batas bawahnya y elemen ke-8
 
 plt.grid(True)
 plt.legend(['Data'])

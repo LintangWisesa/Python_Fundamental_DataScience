@@ -1,4 +1,7 @@
 
+# pip install matplotlib
+# py -m pip install matplotlib
+
 import matplotlib.pyplot as plt
 # from matplotlib import pyplot as plt 
 
