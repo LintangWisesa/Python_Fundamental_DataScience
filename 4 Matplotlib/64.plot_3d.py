@@ -3,7 +3,7 @@ from mpl_toolkits.mplot3d import axes3d
 import numpy as np
 
 fig = plt.figure()
-ax = fig.add_subplot(111, projection = '3d')
+ax = plt.subplot(111, projection = '3d')
 
 x = [0,1,2,3,4,5,6,7,8,9]
 y = [0,1,2,3,4,5,6,7,8,9]
