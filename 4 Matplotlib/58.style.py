@@ -2,9 +2,15 @@
 import matplotlib.pyplot as plt
 from matplotlib import style
 
-# style.use('ggplot')
-# style.use('fivethirtyeight')
 style.use('dark_background')
+# ['seaborn-dark', 'dark_background', 'seaborn-pastel', 
+# 'seaborn-colorblind', 'tableau-colorblind10', 'seaborn-notebook', 
+# 'seaborn-dark-palette', 'grayscale', 'seaborn-poster', 
+# 'seaborn', 'bmh', 'seaborn-talk', 'seaborn-ticks', 
+# '_classic_test', 'ggplot', 'seaborn-white', 'classic', 
+# 'Solarize_Light2', 'seaborn-paper', 'fast', 
+# 'fivethirtyeight', 'seaborn-muted', 'seaborn-whitegrid', 
+# 'seaborn-darkgrid', 'seaborn-bright', 'seaborn-deep']
 
 print(plt.style.available)
 print(plt.__file__) 
