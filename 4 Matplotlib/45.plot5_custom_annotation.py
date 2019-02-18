@@ -13,7 +13,8 @@ plt.xlabel('Nilai x')
 plt.ylabel('Nilai y')
 
 plt.annotate('Nilai\ntertinggi', xy=(8, 10), xytext=(4.5, 9),
-             arrowprops=dict(facecolor='black', shrink=0.05),
+             arrowprops=dict(facecolor='black', shrink=0.1),
+             # arrowprops = dict(arrowstyle = '<|-')
              )
 
 plt.grid(True)

@@ -1,8 +1,7 @@
 
 import matplotlib.pyplot as plt
-from matplotlib import style
 
-style.use('dark_background')
+plt.style.use('dark_background')
 # ['seaborn-dark', 'dark_background', 'seaborn-pastel', 
 # 'seaborn-colorblind', 'tableau-colorblind10', 'seaborn-notebook', 
 # 'seaborn-dark-palette', 'grayscale', 'seaborn-poster', 
