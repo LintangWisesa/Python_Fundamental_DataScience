@@ -20,7 +20,13 @@ ax.bar3d(
     np.array(dx),
     np.array(dy),
     np.array(dz),
-    color = 'red',
+    color = ['black', 'pink', 'orange', 'yellow', 'green', 'lightgreen', 'blue', 'lightblue', 'purple', 'red'],
+)
+
+ax.grid(False)
+ax.set_title(
+    label = '3D Bar Plotting',
+    loc = 'center',
 )
 
 ax.set_xlabel('Nilai x')
