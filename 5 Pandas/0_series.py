@@ -6,8 +6,12 @@ import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt
 
-s = pd.Series([1,3,5,np.nan,6,8])
+x = pd.Series([1,3,5,np.nan,6,8])
+print(x)
+print(x[0])
+print(x[0:6:2])
 
-print(s)
-print(s[0])
-print(s[0:6:2])
+y = ['Andi', 'Budi', 'Caca', 'Deni', 'Euis']
+z = pd.Series(y, index = ['a','b','c','d','e'])
+print(z)
+print(z['a'])
