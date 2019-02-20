@@ -15,3 +15,9 @@ y = ['Andi', 'Budi', 'Caca', 'Deni', 'Euis']
 z = pd.Series(y, index = ['a','b','c','d','e'])
 print(z)
 print(z['a'])
+
+# y = ['Andi', 'Budi', 'Caca', 'Deni', 'Euis']
+# z = pd.Series(y, index = ['a','b','c','d','e'], name='Data')
+# print(z)
+# print(z['a'])
+
