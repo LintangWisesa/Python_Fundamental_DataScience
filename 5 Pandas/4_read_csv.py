@@ -1,7 +1,7 @@
 import pandas as pd 
 df = pd.read_csv('4_datarokok.csv')
 
-# menjadikan elemen ke-3 (baris ke 4 di CSV) sbg judul kolom
+# menjadikan elemen ke-3 (baris ke 2 di CSV) sbg judul kolom
 # df = pd.read_csv('4_datarokok.csv', header=3)
 
 # untuk CSV yg tdk ada nama kolom, bisa generate dg:
