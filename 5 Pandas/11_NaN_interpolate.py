@@ -9,4 +9,8 @@ df2 = df.interpolate()
 # NaN => 13
 # 14  => 14
 
+# gabungan fillna & interpolate!
+# df2 = df.interpolate().fillna({
+#     'nama': 'Tanpa Nama'
+# })
 print(df2)

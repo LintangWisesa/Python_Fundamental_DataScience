@@ -28,3 +28,24 @@ print(df2)
 #     'kolom2': 'n.a',
 # }, np.NaN)
 # print(df2)
+
+# replace with ffill method!
+# df2 = df.replace(
+#     to_replace=['-', 'n.a'],
+#     method = 'ffill'
+# )
+
+# replace val di kolom tertentu dg val tertentu
+# kolom nama '-' menjadi 'Anonim'
+# kolom usia '-' menjadi 0
+# kolom massa '-' & 'n.a' menjadi 0
+# =====================================
+# df = df.replace({
+#     'nama': '-',
+#     'usia': '-',
+#     'massa': ['-', 'n.a']
+# }, {
+#     'nama': 'Anonim',
+#     'usia': 0,
+#     'massa': 0
+# })

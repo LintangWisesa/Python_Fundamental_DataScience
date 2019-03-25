@@ -20,10 +20,10 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.sort_values(by='B', ascending=False))
 # print(df.sort_values(by=['B', 'A'], ascending=False))
 # print(df.sort_values(by=['B', 'A'], ascending=[False, True]))
+# print(df.set_index('kolom1'))
 
 # print(df['A'])
 # print(df[0:3])
-
 
 # loc = memanggil baris/kol dg nama indexnya!
 # ================================================= 
@@ -50,3 +50,11 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.iat[1,1])
 
 # print(df.T) # transposing data
+
+# multi filter
+# ============================ 
+# print(df.iloc[1::2].sort_values(
+#     by='nama', 
+#     ascending=False)
+#     [['nama', 'usia']]
+# )

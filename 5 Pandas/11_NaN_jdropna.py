@@ -14,3 +14,9 @@ print(df2)
 
 # tetap tampilkan data yg memiliki minimal 2 value
 # df2 = df.dropna(thresh = 2) 
+
+# hide jika di kolom nama datanya NaN
+# df = df.dropna(subset = ['nama'])
+
+# hide jika di kolom nama & usia datanya NaN
+# df = df.dropna(subset = ['nama', 'usia'])

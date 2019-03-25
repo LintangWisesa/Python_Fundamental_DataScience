@@ -17,3 +17,7 @@ print(df)
 print(df.pivot(index = 'tgl', columns = 'kota'))
 print(df.pivot(index = 'tgl', columns = 'kota')['suhu'])
 print(df.pivot(index = 'tgl', columns = 'kota')['angin'])
+
+# ===========================
+# show hanya tanggal & angin
+print(df.pivot(index = 'tgl', columns = 'kota').loc['03-02-2019', 'angin'])

@@ -17,6 +17,8 @@ data = [
 df = pd.DataFrame(data)
 
 # print(pd.crosstab(df.kota, df.status))
+# print(pd.crosstab(df['kota'], df['status']))
+
 # print(pd.crosstab(df.sex, df.status, margins=True))
 # print(pd.crosstab(df.sex, [df.status, df.kota], margins=True))
 
