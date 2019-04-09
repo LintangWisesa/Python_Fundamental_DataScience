@@ -3,6 +3,9 @@ kawan = ['Andi', 'Budi', 'Caca']
 
 print(kawan)
 print(kawan[0])
+print(kawan[len(kawan) - 1])
+print(kawan[-1])
+print(kawan[-2])
 
 kawan[1] = 'Bambang'
 print(kawan[0:2])

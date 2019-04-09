@@ -1,6 +1,6 @@
 
 1. instalasi
-	- python 3
+	- python 3 => cek python di CMD: py -V atau python --version
 	- pycharm (jetbrains.com/pycharm)
 	  IDE khusus python!
 	- VScode jg bisa, add Python extension & pilih intrepeter: python 3 

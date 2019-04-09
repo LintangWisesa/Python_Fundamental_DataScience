@@ -30,3 +30,6 @@ print(angka)
 
 angka2 = angka.copy()
 print(angka2)
+
+angka2[0:2] = [12, 13] 
+print(angka2)
