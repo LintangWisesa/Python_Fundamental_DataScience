@@ -33,3 +33,11 @@ print(angka2)
 
 angka2[0:2] = [12, 13] 
 print(angka2)
+
+# ==============================
+
+a = [0, 2, 4, 'Andi']
+b = [1, 3, 5]
+
+print(a + b)
+print(a * 2)

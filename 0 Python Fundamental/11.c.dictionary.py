@@ -50,5 +50,13 @@ print(namaBulan)
 del namaBulan[2]
 print(namaBulan)
 
+# melihat daftar key
+print(namaHari.keys())
+print(list(namaHari.keys()))
+
+# melihat daftar value
+print(namaHari.values())
+print(list(namaHari.values()))
+
 # mencari key dari value-nya
 print(list(namaHari.keys())[list(namaHari.values()).index('Senin')])

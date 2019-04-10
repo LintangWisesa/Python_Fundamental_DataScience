@@ -22,6 +22,8 @@ print(tes)
 # add elements = .update()
 data = [3, 4, 'Caca', 'Deni']
 tes.update(data)
+tes.update((21, 22))
+tes.update({'m', 'n'})
 print(tes)
 
 # remove elements = .remove() / if element doesnt exist -> error

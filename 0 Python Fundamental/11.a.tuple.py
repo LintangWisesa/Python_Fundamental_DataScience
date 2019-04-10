@@ -10,3 +10,5 @@ print(posisi[1])
 
 tuples = [(1,2), (2,2), (3,4)]
 print(tuples[1])
+
+print(1 in tuples[0])
