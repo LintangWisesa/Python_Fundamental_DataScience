@@ -12,6 +12,14 @@ def hai(nama):
 
 hai('Ali')
 
+# callback function 
+
+def tes(nama):
+    print('Halo', nama)
+
+tes('Andi')
+tes(input('Ketik nama:'))
+
 # multiple param
 
 def aloha(nama, usia):
