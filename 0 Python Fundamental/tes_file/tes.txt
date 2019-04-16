@@ -1,0 +1,1 @@
+Terima kasih

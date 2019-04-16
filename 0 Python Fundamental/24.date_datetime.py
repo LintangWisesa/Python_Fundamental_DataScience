@@ -20,3 +20,5 @@ print(x.strftime("%S")) # detik
 print(x.strftime("%c")) # Mon Jan 21 16:45:21 2019
 print(x.strftime("%x")) # 01/21/19
 print(x.strftime("%X")) # 16:45:49
+
+print(x.strftime('Sekarang jam %H:%M:%S WIB'))

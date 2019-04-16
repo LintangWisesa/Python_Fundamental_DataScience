@@ -17,3 +17,20 @@ mytripler = myfunc(3)
 
 print(mydoubler(11))
 print(mytripler(11))
+
+
+
+# beda lambda & tanpa lambda
+
+def yy(a):
+    return a
+def xx(a):
+    print(yy(a))
+xx(12)
+
+# ========================== 
+
+def zz():
+    return lambda c : c
+b = zz()
+print(b(13))
