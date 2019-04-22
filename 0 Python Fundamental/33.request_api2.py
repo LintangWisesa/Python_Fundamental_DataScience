@@ -10,3 +10,4 @@ listpemain = data.json()['player']
 for name in listpemain:
     if name['strPosition'] == 'Goalkeeper':
         print(name['strPlayer'])
+

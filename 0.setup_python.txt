@@ -34,6 +34,19 @@ install python via chocolatey:
 
 ====================================================================
 
+Mac
+sudo easy_install pip
+sudo pip install --upgrade pip
+https://evansdianga.com/install-pip-osx/
+
+Win
+pip --version
+py -m pip -V
+py -m pip install -U pip setuptools
+python -m pip install -U pip setuptools
+
+====================================================================
+
 install package
 
 1. $ pip
