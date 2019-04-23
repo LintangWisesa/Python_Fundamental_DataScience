@@ -7,7 +7,8 @@ def index():
     return render_template('home.html')
     # render html file from templates dir
 
-# go to => localhost:5000/file/lintang.png
+# go to => localhost:5000/file/lintang1.png
+# go to => localhost:5000/file/foto/lintang2.png
 @app.route('/file/<path:path>')
 def staticfile(path):
     return send_from_directory('file', path)
