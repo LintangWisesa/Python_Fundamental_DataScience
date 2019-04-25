@@ -14,7 +14,7 @@ Students = [
         'age': 22
     },
     {
-        'id': 1,
+        'id': 3,
         'name': 'Caca',
         'age': 23
     }
@@ -37,9 +37,23 @@ def data():
     else:
         return jsonify({'error': 'No id field provided on URL'})
     
+@app.route('/search')
+def search():
+    if 'id' in request.args:
+        id = int(request.args['id'])
+        if id < 1 or id > len(Students):
+            return 'Maaf data tidak ditemukan'
+        else:
+            return jsonify(Students[id-1])
+    else:
+        return jsonify(Students)
+
 if __name__ == '__main__':
     app.run(debug = True)
 
 # try to GET:
 # localhost:5000/data?id=1
 # localhost:5000/data?id=2
+
+# localhost:5000/search?id=2
+# localhost:5000/search?id=20
