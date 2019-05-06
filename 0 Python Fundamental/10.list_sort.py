@@ -8,8 +8,8 @@ x = angka[0:jumlahKarakterPertamaYgAkanDisortir]
 x.sort()
 print(x)
 
-x.sort(reverse = True)
-print(x)
-
 angka[0:len(x)] = x
 print(angka)
+
+# x.sort(reverse = True)
+# print(x)
