@@ -7,5 +7,3 @@ mycol = mydb["users"]
 
 mydata = { "nama": "Andi", "usia": "27" }
 x = mycol.insert_one(mydata)
-
-print(myclient.list_database_names())
