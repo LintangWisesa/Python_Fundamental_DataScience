@@ -1,10 +1,14 @@
 
 import numpy as np
 
-x = np.random.rand(2,4)
-y = np.random.randint(10, size=10)
-z = np.random.randint(10, size=(2,5))
+x1 = np.random.rand(10)
+x2 = np.random.rand(2,4)
 
-print(x)
-print(y)
-print(z)
+print(x1)
+print(x2)
+
+y1 = np.random.randint(10, size=10)
+y2 = np.random.randint(10, size=(2,5))
+
+print(y1)
+print(y2)
