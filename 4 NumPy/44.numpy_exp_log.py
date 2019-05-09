@@ -1,8 +1,11 @@
 import numpy as np
 
-a = np.array([1,2,3])
-b = np.array([10,100,1000])
+print(np.exp(2))
+# e ^ 2 = 7.38905609893065
+# e = euler's number = 2.7182818284590452353602874713527
 
-print(np.exp(a))
-print(np.log(a))        # natural log (ln)  e log x = ?
-print(np.log10(a))      # 10 based log      10 log 1000 = ?
+print(np.log(7.38905609893065))
+# e log 7.39 = ln 7.39 = 2 
+
+print(np.log10(1000))
+# 10 log 1000 = 3

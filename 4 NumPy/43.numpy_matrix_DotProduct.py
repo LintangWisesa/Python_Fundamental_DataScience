@@ -1,8 +1,10 @@
 
 # dot product
-# |1|   |4|
-# |2| . |5| = (1x4)+(2x5)+(3x6) = 32 
-# |3|   |6|
+# syarat: jumlah kolom matrix a = jumlah baris matrix b
+
+# |1|   
+# |2| . | 4 5 6 | = (1x4)+(2x5)+(3x6) = 32 
+# |3|   
 
 import numpy as np
 

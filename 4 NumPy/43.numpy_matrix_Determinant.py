@@ -1,6 +1,6 @@
 # determinant
-# |a| |c|  =  ad - bc
-# |b| |d|     
+# | a c |  =  ad - bc
+# | b d |     
 
 import numpy as np
 
