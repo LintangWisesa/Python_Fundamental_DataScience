@@ -16,6 +16,7 @@ b = [1,4,9,3,5,8,4,2,5]
 # warna dg hexcode: #FF0000, #00FF00, #000000 dst
 
 plt.plot(a,a,'g--', a,a**2,'r--', a,a**3,'bs', a,a**3,'y--')
+# plt.plot(a,a,'g-o', a,a**2,'r-*', a,a**3,'bs', a,a**3,'y-^')
 
 plt.title('Ujicoba Visualisasi Data')
 plt.xlabel('Nilai X')
