@@ -5,7 +5,7 @@ import csv
 x = []
 y = []
 
-with open('54_data.txt', 'r') as csvfile:
+with open('54_data.csv', 'r') as csvfile:
     plots = csv.reader(csvfile, delimiter=',')
     for row in plots:
         x.append(int(row[0]))

@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x, y = np.loadtxt('53_data.txt', delimiter=',', unpack=True)
+x, y = np.loadtxt('54_data.csv', delimiter=',', unpack=True)
 
 plt.plot(x, y, label='Data dari file')
 plt.title('Tes Plotting Data')

@@ -17,3 +17,7 @@ print(a[0:, [0, -1]])
 print(a[0:3:2])         # start : stop : step
 print(a[1::2])
 print(a[1::2], 1)
+
+#  2 dimensi
+b = np.array([[[1, 2, 3]]])
+print(b[:,:,2])

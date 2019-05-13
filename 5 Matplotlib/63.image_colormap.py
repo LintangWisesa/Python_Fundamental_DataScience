@@ -4,6 +4,8 @@ import numpy as np
 
 img = mpimg.imread('63.png')
 lum_img = img[:, :, 0]
+print(lum_img)
+
 imgplot = plt.imshow(lum_img, cmap='Blues')
 
 plt.colorbar()
