@@ -14,3 +14,9 @@ import requests
 r = requests.get("https://ezalin.com")
 soup = BeautifulSoup(r.content, 'html.parser')
 print(soup)
+
+### from website using urllib
+import urllib.request
+url = urllib.request.urlopen('https://ezalin.com').read()
+soup = BeautifulSoup(url, 'html.parser')
+print(soup)
