@@ -9,7 +9,7 @@ x = [0,1,2,3,4,5,6,7,8,9]
 y = [0,1,2,3,4,5,6,7,8,9]
 z = [[0,1,2,3,4,5,6,7,8,9]]
 
-ax.scatter(np.array(x), np.array(y), np.array(z), color='red', marker='*')
+ax.scatter(np.array(x), np.array(y), np.array(z), color='red', marker='*', s=200)
 ax.set_xlabel('Nilai x')
 ax.set_ylabel('Nilai y')
 ax.set_zlabel('Nilai z')

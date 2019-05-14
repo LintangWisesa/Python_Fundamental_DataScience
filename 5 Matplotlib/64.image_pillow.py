@@ -11,10 +11,10 @@ gambar = Image.open('63.png').convert('L')
 arrayGambar = np.array(gambar)
 print(arrayGambar)
 
-# show result as image with matplotlib
+### show result as image with matplotlib
 # plt.imshow(arrayGambar, cmap='gray')
 # plt.show()
 
-# show result as image with pillow
+### show result as image with pillow
 hasil = Image.fromarray(arrayGambar, 'L')
 hasil.show()
