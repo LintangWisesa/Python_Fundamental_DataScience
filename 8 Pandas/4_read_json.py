@@ -1,22 +1,16 @@
 import pandas as pd 
-df = pd.read_json('4_data.json')
+df = pd.read_json('5_data.json')
 
+# print df, kolom json akan urut otomatis
 print(df)
-# print(df.shape)
-# print(df.describe())
 
-# ======================
+# membalik urutan kolom
+cols = df.columns.tolist()
+print(cols)
+cols = cols[-1:] + cols[:-1]
+df = df[cols]
+print(df)
 
-# print(df.head())
-# print(df.head(2))
-# print(df.tail())
-# print(df.tail(3))
-# print(df[2:5])
-
-# print(df.columns)
-# print(df.Provinsi)
-# print(df['Provinsi'])
-# print(df['2015'])
-# print(df[['Provinsi', '2015']])
-# print(type(df['2015']))
-
+# mengurutan kolom secara manual
+df = df[['nama', 'usia']]
+print(df)
