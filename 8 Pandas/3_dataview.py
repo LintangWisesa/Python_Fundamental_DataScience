@@ -12,7 +12,7 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.index)
 # print(df.columns)
 
-# print(df.values)
+# print(df.values)      # it will return a numpy array!
 # print(df.describe())
 
 # print(df.sort_index(axis=1, ascending=False))
@@ -24,6 +24,7 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 
 # print(df['A'])
 # print(df[0:3])
+# print(df[0:5:2])
 
 # loc = memanggil baris/kol dg nama indexnya!
 # ================================================= 
@@ -46,15 +47,10 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.iloc[:,1:3])
 # print(df.iloc[1,1])
 
+# manggil value dg nama index & nama kolom
 # print(df.at[dates[0],'A'])
+
+# manggil value dg urutan index & urutan kolom
 # print(df.iat[1,1])
 
 # print(df.T) # transposing data
-
-# multi filter
-# ============================ 
-# print(df.iloc[1::2].sort_values(
-#     by='nama', 
-#     ascending=False)
-#     [['nama', 'usia']]
-# )

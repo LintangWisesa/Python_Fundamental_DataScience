@@ -10,6 +10,7 @@ print(soup.find_all('li'))
 print(soup.find(id='tes'))
 print(soup.find(class_='halo'))
 print(soup.find(class_='halo').text)
+print(soup.find('ol', id='list').text)
 
 # # show all text inside <li>
 # for nama in soup.find_all('li'):

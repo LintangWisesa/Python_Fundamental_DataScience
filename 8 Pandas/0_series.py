@@ -1,6 +1,7 @@
 
 # Creating a Series by passing a list of values, 
 # letting pandas create a default integer index:
+# pip install pandas
 
 import pandas as pd 
 import numpy as np 
@@ -21,3 +22,5 @@ print(z['a'])
 # print(z)
 # print(z['a'])
 
+plt.plot(x, x)
+plt.show()

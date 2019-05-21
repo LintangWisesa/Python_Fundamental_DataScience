@@ -4,12 +4,11 @@ df = pd.read_csv('4_datarokok.csv')
 # menjadikan elemen ke-3 (baris ke 2 di CSV) sbg judul kolom
 # df = pd.read_csv('4_datarokok.csv', header=3)
 
-# untuk CSV yg baris pertamanya jd header col &
-# tdk ada nama kolom, bisa generate dg:
+# untuk CSV yg baris pertamanya jd header col & tdk ada nama kolom, bisa generate dg:
 # df = pd.read_csv('4_datarokok.csv', header=None, names=['kolom1', 'kolom2', 'kolom3'])
 
-# skip baris pertama
-# df = pd.read_csv('4_datarokok.csv', skiprows=1)
+# skip 2 baris pertama
+# df = pd.read_csv('4_datarokok.csv', skiprows=2)
 
 print(df)
 # print(df.shape)
