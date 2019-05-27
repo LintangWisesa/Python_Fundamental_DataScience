@@ -10,6 +10,9 @@ df = pd.read_csv('4_datarokok.csv')
 # skip 2 baris pertama
 # df = pd.read_csv('4_datarokok.csv', skiprows=2)
 
+# baca csv, tapi data kolom pertama kok jadi index? maka gunakan:
+# df = pd.read_csv('file.csv', index_col=False)
+
 print(df)
 # print(df.shape)
 # print(df.describe())

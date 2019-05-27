@@ -40,10 +40,13 @@ df = pd.read_csv(
 
 # show data pada bulan Februari 2019
 # print(df['2019-02'])
-# print(df['2019-02-01'])
+print(df['2019-02-01'])
+print(df['01-02-2019'])
 # print(df['2019-02-07' : '2019-02-01'])
-# print(dfTelkom['01-29-2019' : '02-11-2019'])
+# print(df['01-29-2019' : '02-11-2019'])
 
 # show rata2 nilai close pada Feb 2019
 # print(df['2019-02']['close'].mean())
 # print(df['2019-02'].close.mean())
+# print(df['2019-02']['close'].max())
+# print(df['2019-02']['close'].min())
