@@ -1,3 +1,8 @@
+# historical price & data / data historis saham 
+# https://www.nasdaq.com/symbol/aapl/historical
+# https://finance.yahoo.com/quote/AALI.JK/history?ltr=1
+# https://www.seputarforex.com/saham/data_historis/
+
 # 1. baca file as dataframe
 # 2. ubah kolom tanggal jadi timestamp, bukan string!
 # 3. jadikan kolom tanggal sbg index

@@ -7,7 +7,7 @@ df = pd.read_csv('10_data_NaN.csv', na_values=['-', 'n.a', 'not available'])
 df2 = df.fillna(0)
 print(df2)
 
-# data NaN di tiap kolom/series akan ditampilkan dlm bentuk beragam
+# data NaN di tiap kolom/series dpt ditampilkan dlm bentuk beragam
 # df3 = df.fillna({
 #     '2015': 0,
 #     '2016': 0,

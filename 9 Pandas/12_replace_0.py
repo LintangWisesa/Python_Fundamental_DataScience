@@ -8,11 +8,9 @@ df = pd.read_csv('10_data_NaN.csv')
 df2 = df.replace(['-', 'n.a'], 0)
 print(df2)
 
-
 # replace all '-' & 'n.a' to NaN
 # df2 = df.replace(['-', 'n.a'], np.NaN)
 # print(df2)
-
 
 # replace a specific val to another specific val
 # df2 = df.replace({
@@ -20,7 +18,6 @@ print(df2)
 #     'n.a': 'No Data'
 # })
 # print(df2)
-
 
 # replace a specific val on a specific column to NaN
 # df2 = df.replace({
@@ -47,5 +44,5 @@ print(df2)
 # }, {
 #     'nama': 'Anonim',
 #     'usia': 0,
-#     'massa': 0
+#     'massa': [0, 'data tak ada']
 # })

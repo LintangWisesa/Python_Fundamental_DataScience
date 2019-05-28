@@ -21,6 +21,10 @@ df2 = df['close'].resample('M').mean()
 # menampilkan rata2 closing tiap kuarter 
 # df2 = df['close'].resample('Q').mean()
 
+# resample data dg freq='Yearly' 
+# menampilkan rata2 closing tiap tahun 
+# df2 = df['close'].resample('Y').mean()
+
 print(df2)
 plt.plot(df2, 'r--')
 plt.plot(df2, 'go')
