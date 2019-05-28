@@ -17,15 +17,15 @@ bali = [
 ]
 bali = pd.DataFrame(bali)
 
-# df = pd.concat([jawa, bali])
+# df = pd.concat([jawa, bali], sort=False)
 # print(df)
 
 # gabungkan index
-# df = pd.concat([jawa, bali], ignore_index = True)
+# df = pd.concat([jawa, bali], ignore_index = True, sort=False)
 # print(df)
 
 # buat kategori key (ignore_index harus dihapus!)
-# df = pd.concat([jawa, bali], keys=['jawa','bali'])
+# df = pd.concat([jawa, bali], keys=['jawa','bali'], sort=False)
 # print(df)
 # print(df.loc['jawa'])
 # print(df.loc['bali'])

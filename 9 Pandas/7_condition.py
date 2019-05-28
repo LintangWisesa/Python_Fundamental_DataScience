@@ -27,3 +27,8 @@ df = pd.read_csv('5_datarokok.csv')
 # df = df[['Name', 'Position', 'Club', 'Overall']][df['Overall'] >= 90]
 # df = df[[df['Club'] == 'Real Madrid']]
 # print(df)
+
+# min, max & mean by column tertentu
+# print(df.min(level='suhu'))
+# print(df.max(level='suhu'))
+# print(df.mean(level='suhu'))

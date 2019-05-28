@@ -27,3 +27,6 @@ print(g.get_group('Jakarta'))
 print(g.max())
 print(g.min())
 print(g.mean())
+
+print(g.min(numeric_only='int'))
+print(g.min(level='suhu'))
