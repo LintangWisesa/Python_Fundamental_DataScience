@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3.js Basic</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <script>
+
+        var dataset = [5, 16, 3, 20, 14, 19, 2, 25, 1, 89];
+        
+        d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text(function(x){
+                return x;
+            })
+            .style("color", function(d) {
+                if (d > 15) {
+                    return "red";
+                } else {
+                    return "black";
+                }
+            })
+    
+    </script>
+</body>
+</html>

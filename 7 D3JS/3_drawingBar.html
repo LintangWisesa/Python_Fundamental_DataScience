@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3.js Basic</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        div.bar {
+            display: inline-block;
+            width: 20px;
+            background-color: teal;
+            margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+    <script>
+
+        var dataset = [5, 16, 3, 20, 14, 19, 2, 25];
+        
+        d3.select("body").selectAll("div")
+            .data(dataset)
+            .enter()
+            .append("div")
+            .attr("class", "bar")
+            .style("height", function(d) {
+                var barHeight = d * 5;
+                return barHeight + "px";
+            });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3.js Basic</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <script>
+
+        var dataset = [ 'Andi', 'Budi', 'Caca', 'Deni', 'Euis' ];
+        
+        d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text(function(x){
+                return x;
+                });
+    
+    </script>
+</body>
+</html>

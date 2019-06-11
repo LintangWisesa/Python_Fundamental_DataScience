@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3.js Basic</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <script>
+
+        // adding element
+        d3.select("body").append("p").text("Halo dunia!");
+
+        // chainless
+        var body = d3.select("body");
+        var p = body.append("p");
+        p.text("Ini paragraf baru!");
+    
+    </script>
+</body>
+</html>

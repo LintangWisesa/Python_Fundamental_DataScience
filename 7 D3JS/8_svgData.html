@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3.js Basic</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
+    <script>
+
+        var dataset = [5, 16, 3, 20, 14, 19, 2, 25];
+        var h = 200
+        var w = 1500
+
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h)
+
+        // create bar chart
+        svg.selectAll("rect")
+            .data(dataset)
+            .enter()
+            .append("rect")
+            .attr("width", 20)
+            .attr("height", 100)
+            .attr("x", function(d, i) {
+                return i * 21
+            })
+            .attr("y", function(d) {
+                return h - (d * 4);
+            })
+            .attr("height", function(d) {
+                return d * 4
+            })
+            .attr("fill", function(d) {
+                return "rgb(0, 0, " + (d * 10) + ")";
+            });
+
+    </script>
+
+</body>
+</html>
