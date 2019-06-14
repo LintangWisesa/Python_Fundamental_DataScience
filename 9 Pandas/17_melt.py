@@ -11,6 +11,7 @@ dataSuhu = [
 ]
 
 df = pd.DataFrame(dataSuhu)
+print(df)
 
 # basic melt
 # df1 = pd.melt(df, id_vars=['hari'])
