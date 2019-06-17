@@ -10,7 +10,7 @@ y = [1,4,9,3,5,8,4,2,5]
 
 plt.plot(x,y)
 
-plt.title('Tes Plotting Data')
+plt.title('Tes Plotting Data', fontdict={'fontsize': 20})
 plt.xlabel('Nilai x')
 plt.ylabel('Nilai y')
 
