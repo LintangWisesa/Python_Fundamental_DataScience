@@ -1,7 +1,7 @@
 # load model with joblib
 
-# from sklearn.externals import joblib
-import joplib   # $ pip install joblib
+from sklearn.externals import joblib
+# import joblib   # $ pip install joblib
 
 model = joblib.load('9_saveModel_joblib')
 
