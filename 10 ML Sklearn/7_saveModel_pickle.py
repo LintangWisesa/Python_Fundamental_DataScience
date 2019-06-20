@@ -1,4 +1,5 @@
-# save model with pickle
+# save model with pickle: 
+# python default package, no need installation
 
 from sklearn import linear_model
 import pandas as pd
