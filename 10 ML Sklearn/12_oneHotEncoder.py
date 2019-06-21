@@ -40,12 +40,30 @@ y = dfle['harga']
 # ==========================================
 
 from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
 
-ohe = OneHotEncoder(categorical_features=[0])
+ct = ColumnTransformer(
+    [('one_hot_encoder', OneHotEncoder(categories='auto'), [0])],
+    remainder='passthrough'
+)
 
-x = ohe.fit_transform(x).toarray()
+x = np.array(ct.fit_transform(x), dtype=np.int64)
+
 # print(x)
-# bekasi, bogor, depok
+# [[   1    0    0 2600]
+#  [   1    0    0 3000]
+#  [   1    0    0 3200]
+#  [   1    0    0 3600]
+#  [   1    0    0 4000]
+#  [   0    0    1 2600]
+#  [   0    0    1 2800]
+#  [   0    0    1 3300]
+#  [   0    0    1 3600]
+#  [   0    1    0 2600]
+#  [   0    1    0 2900]
+#  [   0    1    0 3100]
+#  [   0    1    0 3600]]
+# bekasi, bogor, depok, harga
 
 # ==========================================
 
