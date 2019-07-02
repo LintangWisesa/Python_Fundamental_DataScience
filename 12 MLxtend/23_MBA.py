@@ -1,4 +1,5 @@
 # Market Basket Analysis
+# pip install mlxtend
 # dataset: https://www.kaggle.com/sulmansarwar/transactions-from-a-bakery/version/1
 # tutorial: https://towardsdatascience.com/mba-for-breakfast-4c18164ef82b
 

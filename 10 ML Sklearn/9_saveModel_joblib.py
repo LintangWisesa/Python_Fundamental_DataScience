@@ -25,6 +25,6 @@ model.fit(df[['luas']], df['harga'])
 # save model with joblib
 
 # from sklearn.externals import joblib
-import joplib   # $ pip install joblib 
+import joblib   # $ pip install joblib 
 
 joblib.dump(model, '9_saveModel_joblib')

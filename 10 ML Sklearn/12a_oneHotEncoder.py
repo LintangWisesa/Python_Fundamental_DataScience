@@ -30,12 +30,14 @@ le = LabelEncoder()
 dfle = df
 
 dfle['kota'] = le.fit_transform(dfle['kota'])
-# print(dfle)
+print(dfle)
+print(le.classes_)
+print(le.transform(['Bekasi', 'Bogor', 'Depok', 'Bekasi', 'Bogor', 'Depok']))
 
 x = dfle[['kota', 'luas']].values
-# print(x)
+print(x)
 y = dfle['harga']
-# print(y)
+print(y)
 
 # ==========================================
 
@@ -49,7 +51,7 @@ ct = ColumnTransformer(
 
 x = np.array(ct.fit_transform(x), dtype=np.int64)
 
-# print(x)
+print(x)
 # [[   1    0    0 2600]
 #  [   1    0    0 3000]
 #  [   1    0    0 3200]
