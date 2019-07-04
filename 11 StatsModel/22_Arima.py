@@ -87,9 +87,9 @@ predictions = model_arima_fit.forecast(steps=10)[0]
 # plotting 4 data real vs prediksi ARIMA
 # ===============================================================
 
-# plt.plot(test)
-# plt.plot(predictions)
-# plt.show()
+plt.plot(test)
+plt.plot(predictions)
+plt.show()
 
 # ===============================================================
 # finding best p, d, q value

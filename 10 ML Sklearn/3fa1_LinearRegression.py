@@ -14,7 +14,7 @@ print(x)
 y = 2 * x - 5 + rng.randn(50)
 print(y)
 
-# plt.scatter(x, y);
+plt.scatter(x, y);
 # plt.show()
 
 # =================================
@@ -27,7 +27,7 @@ yfit = model.predict(xfit.reshape(-1, 1))
 
 plt.scatter(x, y)
 plt.plot(xfit, yfit);
-# plt.show()
+plt.show()
 
 print("Model slope:    ", model.coef_[0])
 print("Model intercept:", model.intercept_)
