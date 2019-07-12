@@ -25,7 +25,7 @@ sns.countplot(
     order = bread['Item'].value_counts().iloc[:10].index
 )
 plt.xticks(rotation=90)
-# plt.show()
+plt.show()
 
 # ========================================
 # How many items are sold daily?
