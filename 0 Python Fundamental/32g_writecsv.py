@@ -10,13 +10,13 @@ listku = [
     [5, 'Balon Udara', 25000000]
 ]
 
-# writerows: write semua data sekaligus
-with open('gudang.csv', 'w', newline = '') as fileku:
-    tulis = csv.writer(fileku)
-    tulis.writerows(listku)
-
 # writerow: write satu data
 # with open('gudang.csv', 'w', newline = '') as fileku:
 #     tulis = csv.writer(fileku)
 #     for i in listku:
 #         tulis.writerow(i)
+
+# writerows: write semua data sekaligus
+with open('gudang.csv', 'w', newline = '') as fileku:
+    tulis = csv.writer(fileku)
+    tulis.writerows(listku)

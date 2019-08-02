@@ -18,3 +18,14 @@ print(kata.replace('dhika', 'caraka'))
 
 print(kata.split('a'))
 print(kata.split('a')[1])
+
+# ================================
+
+usia = 21
+# Usia saya = 21
+
+print('Usia saya' + str(usia))
+print('Usia saya', usia)
+print('Usia saya %d' % usia)
+print('Usia saya = {}'.format(usia))
+print(f'Usia saya = {usia}')
