@@ -3,7 +3,7 @@
 import csv
 import json
 
-with open('data1.csv') as dataku:
+with open('32k_data.csv') as dataku:
     output = csv.reader(dataku)
     hasil = []
     hasil2 = []
