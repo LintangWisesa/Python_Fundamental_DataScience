@@ -51,6 +51,7 @@ def kurs():
     elif konversi == '2':
         bank = input('Silakan ketik bank pilihan Anda : ')
         if bank.lower() in listbank:    
+            url = 'https://kurs.web.id/api/v1/'+bank.lower()
             nominal = input('Silakan input nominal uang yang akan dikonversi : US$. ')
             data = requests.get(url)
             kursJual = data.json()["jual"]
