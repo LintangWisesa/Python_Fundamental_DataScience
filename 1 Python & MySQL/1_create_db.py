@@ -7,5 +7,13 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-mycursor.execute("CREATE DATABASE py_mysql")
+mycursor.execute("CREATE DATABASE doraemon")
 
+# drop then show all db
+# mycursor.execute('drop database doraemon')
+# mycursor.execute('show databases')
+
+# alldb = []
+# for db in kursor.fetchall():
+#     alldb.append(db[0])
+# print(alldb)
