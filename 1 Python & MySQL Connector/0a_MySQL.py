@@ -1,4 +1,6 @@
 # pip install MySQL-connector-python
+# python -m pip install MySQL-connector-python
+# pip3 install MySQL-connector-python
 
 import mysql.connector
 
