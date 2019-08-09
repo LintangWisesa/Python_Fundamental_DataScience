@@ -19,4 +19,4 @@ val = [
 
 mycursor.executemany(sql, val)
 mydb.commit()
-print(mycursor.rowcount, "Data tersimpan!")
+print(mycursor.rowcount, "data baru tersimpan!")
