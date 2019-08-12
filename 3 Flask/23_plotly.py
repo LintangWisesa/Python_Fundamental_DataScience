@@ -10,7 +10,7 @@ import numpy as np
 
 app = Flask(__name__)
  
-@app.route('/chart')
+@app.route('/')
 def line():
     # count = 500
     # xScale = np.linspace(0, 100, count)
