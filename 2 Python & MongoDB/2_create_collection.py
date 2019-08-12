@@ -6,5 +6,5 @@ mydb = myclient["py_mongo"]
 mycol = mydb["users"]
 
 print(myclient.list_database_names())
-
+print(mydb.list_collection_names())
 # db & col akan terlihat setelah ada data isiannya
