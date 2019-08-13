@@ -47,6 +47,8 @@ def not_found(error):
     # return make_response(
     #     render_template('error.html')
     # )
+    # return render_template('error.html')
+    # return jsonify({'status': 'Error Not Found'})
 
 if __name__ == '__main__':
     app.run(debug = True)
