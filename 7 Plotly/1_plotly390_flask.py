@@ -2,6 +2,7 @@
 from flask import Flask, render_template
 import json
 
+# pip install plotly==3.9.0
 # pip install plotly
 import plotly
 import plotly.plotly as py
@@ -25,9 +26,8 @@ def line():
     )
  
     data = [trace]
-    graphJSON = json.dumps(data, cls=plotly.utils.PlotlyJSONEncoder)
-    return render_template('plotly_chart.html', graphJSON=graphJSON)
+    graphJSON = json.dumps(data, cls = plotly.utils.PlotlyJSONEncoder)
+    return render_template('plotly390_chart.html', graphJSON = graphJSON)
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    app.run(debug=True)
