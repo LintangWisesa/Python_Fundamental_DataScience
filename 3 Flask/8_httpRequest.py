@@ -15,8 +15,10 @@ def data():
         return jsonify({'status': 'You\'re GET-ing'})
     elif request.method == 'PUT':
         return jsonify({'status': 'You\'re PUT-ing'})
-    else:
+    elif request.method == 'DELETE':
         return jsonify({'status': 'You\'re DELETE-ing'})
+    else:
+        return jsonify({'status': 'Others'})
 
 if __name__ == '__main__':
     app.run(debug = True)

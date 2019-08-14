@@ -7,11 +7,11 @@ def index():
     return render_template('home.html')
     # render html file from templates dir
 
-# go to => localhost:5000/file/lintang1.png
-# go to => localhost:5000/file/foto/lintang2.png
-@app.route('/file/<path:path>')
-def staticfile(path):
-    return send_from_directory('file', path)
+# go to => localhost:5000/fileku/1.png
+# go to => localhost:5000/fileku/foto/lintang2.mp4
+@app.route('/fileku/<path:x>')
+def staticfile(x):
+    return send_from_directory('file', x)
 
 if __name__ == '__main__':
     app.run(debug = True)

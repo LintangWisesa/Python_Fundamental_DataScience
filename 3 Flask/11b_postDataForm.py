@@ -11,6 +11,9 @@ def result():
       result = request.form
       print(result)  
       # ImmutableMultiDict([('Name', 'Andi'), ('Physics', '90'), ('chemistry', '100'), ('Mathematics', '90')])
+      # print(result['Name'])
+      # print(result['Physics'])
+      # print(result['Mathematics'])
       return render_template("dataresult.html", result = result)
 
 if __name__ == '__main__':

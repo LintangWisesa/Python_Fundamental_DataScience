@@ -13,7 +13,9 @@ def data():
 
         print(body['name'])
         print(body['age'])
-        
+        # body json :
+        # {"name":"lintang", "age":22}
+
         return jsonify({
             'name': body['name'],
             'age': body['age']
