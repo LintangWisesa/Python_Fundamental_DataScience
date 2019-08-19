@@ -11,4 +11,4 @@ print(b)
 
 print(a[0])
 print(b[1][0])
-print(b[1, 0])
+print(b[1, 0])  # = b[1][0] 

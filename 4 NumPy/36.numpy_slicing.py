@@ -7,7 +7,9 @@ print(a[0][2])
 print(a[0,2])
 
 print(a[0:, 0:])
-print(a[0:, 3:]) 
+print(a[0:, 3:])
+print(a[:, 0:])
+print(a[:, 3:]) 
 
 print(a[0:,3])          # [0:,3] means all rows, index 3
 print(a[0:2,3])         # [0:2,3] from row 0-2 (2 is not included), index 3
@@ -18,6 +20,6 @@ print(a[0:3:2])         # start : stop : step
 print(a[1::2])
 print(a[1::2], 1)
 
-#  2 dimensi
+#  3 dimensi
 b = np.array([[[1, 2, 3]]])
 print(b[:,:,2])
