@@ -25,3 +25,7 @@ print(b.ndim)       # dimensi
 print(b.size)       # jumlah elemen value
 print(b.itemsize)   # size
 print(b.dtype)      # data type
+
+# change numpy array data type
+b = b.astype('float64') 
+print(b.dtype)

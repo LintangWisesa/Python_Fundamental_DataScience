@@ -15,7 +15,7 @@ print(a)
 a = a / 2   # atau a //= 2
 print(a)
 
-# a[:,1] += 2
+# a[:,1] += 2   # +2 hanya di element ke-1
 # print(a)
 # output = [(1,4,3,4), (5,8,7,8), (9,12,11,12)]
 

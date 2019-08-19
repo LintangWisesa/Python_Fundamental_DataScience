@@ -1,30 +1,22 @@
-# https://idschool.net/smp/cara-menggambar-persamaan-linear/
-# pers garis 3x + 2y = 12!
-
-# cari titik potong x dg sumbu y 
-# y = 0 maka x = ?
-# 3x = 12
-
-# cari titik potong y dg sumbu x 
-# x = 0 maka y = ?
-# 2y = 12
-
 import numpy as np
 import matplotlib.pyplot as plt
+# 3x + 2y = 12
 
-a = np.array([[3]])
-b = np.array([[2]])
-c = np.array([12])
+# titik potong 1 dg sumbu-x => y = 0  => 3x = 12
+# | 3 | | x | = | 12 |
+x1 = np.linalg.solve([[3]], [12])[0]
+y1 = 0
+print(x1, y1)
 
-x = np.linalg.solve(a,c) # x ketika y = 0
-y = np.linalg.solve(b,c) # y ketika x = 0
-print(x)
-print(y)
+# titik potong 2 dg sumbu-y => x = 0  => 2y = 12
+# | 2 | | y | = | 12 |
+y2 = np.linalg.solve([[2]], [12])[0]
+x2 = 0
+print(x2, y2)
 
-titikA = np.array([x[0], 0])
-titikB = np.array([0, y[0]])
-print(titikA)
-print(titikB)
+x = np.array([x1, x2])     # 4,0
+y = np.array([y1, y2])     # 0,6
 
-plt.plot(titikA, titikB)
+plt.plot(x, y)
+plt.grid(True)
 plt.show()

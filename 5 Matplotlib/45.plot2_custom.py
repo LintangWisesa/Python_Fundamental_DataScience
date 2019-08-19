@@ -6,10 +6,11 @@ x = [1,2,3,4,5,6,7,8,9]
 y = [1,4,9,3,5,8,4,2,5]
 
 plt.plot(x,y)
-# plt.plot(x, y, '-', label='Data', color='g', linewidth=5)
+plt.plot(x, y, '-', label='Data', color='g', linewidth=5)
 # plt.plot(x, y, '--', label='Data')
 # plt.plot(x, y, '.', label='Data')
-# plt.plot(x, y, '*', label='Data')
+# plt.plot(x, y, marker='D', label='Data')
+plt.plot(x, y, '*', label='Data')
 
 plt.title('Tes Plotting Data')
 plt.xlabel('Nilai x')

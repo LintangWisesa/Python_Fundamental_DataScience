@@ -12,8 +12,10 @@ b = [1,4,9,3,5,8,4,2,5]
 # ^ : segitiga
 # * : star
 # . : dot
-# g: green, b: blue, r: red, y: yellow
+# + : plus
+# g: green, b: blue, r: red, y: yellow, k: black
 # warna dg hexcode: #FF0000, #00FF00, #000000 dst
+# warna dg nama: grey, gray, lightblue
 
 plt.plot(a,a,'g--', a,a**2,'r--', a,a**3,'bs', a,a**3,'y--')
 # plt.plot(a,a,'g-o', a,a**2,'r-*', a,a**3,'bs', a,a**3,'y-^')
