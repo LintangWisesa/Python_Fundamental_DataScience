@@ -7,8 +7,8 @@ activity = ['Tidur', 'Tahajud', 'Subuh', 'Berangkat']
 
 plt.pie(slice, labels=activity, autopct='%1.1f%%', textprops={'color':"r"})
 
-# adding center circle
-centre_circle = plt.Circle((0,0),0.70,fc='white')
+# adding center circle plt.Circle((x, y), rad)
+centre_circle = plt.Circle((0,0), .3,fc='white')
 fig = plt.gcf()
 fig.gca().add_artist(centre_circle)
 

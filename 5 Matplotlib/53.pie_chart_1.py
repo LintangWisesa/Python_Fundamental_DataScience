@@ -9,8 +9,8 @@ activity = ['Tidur', 'Tahajud', 'Subuh', 'Berangkat']
 # plt.pie(slice, labels=activity, colors=cols)
 # plt.pie(slice, labels=activity, startangle=90)
 # plt.pie(slice, labels=activity, shadow=True)
-# plt.pie(slice, labels=activity, explode=(0,0.2,0,0))
-# explode=(data1, data2, data3, data4) 
+# plt.pie(slice, labels=activity, counterclock=False)
+# plt.pie(slice, labels=activity, explode=(0,0.2,0,0))  # explode=(data1, data2, data3, data4) 
 # plt.pie(slice, labels=activity, autopct='%1.1f%%')
 plt.pie(slice, labels=activity, autopct='%1.1f%%', textprops={'color':"r"})
 
