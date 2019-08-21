@@ -1,4 +1,4 @@
-
+# DF dgn list akan membentuk df per DATA BARIS
 import pandas as pd 
 import numpy as np 
 

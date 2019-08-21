@@ -1,4 +1,4 @@
-
+# DF dgn dict akan membentuk df per KOLOM
 import pandas as pd 
 import numpy as np 
 

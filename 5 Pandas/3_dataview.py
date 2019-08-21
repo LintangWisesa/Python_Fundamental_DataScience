@@ -9,8 +9,8 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 
 # print(df.head(2))
 # print(df.tail(2))
-# print(df.index)
-# print(df.columns)
+# print(list(df.index))
+# print(list(df.columns))
 
 # print(df.values)      # it will return a numpy array!
 # print(df.describe())
@@ -23,10 +23,11 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.set_index('kolom1'))
 
 # print(df['A'])
+# print(df[['A', 'B']])
 # print(df[0:3])
 # print(df[0:5:2])
 
-# loc = memanggil baris/kol dg nama indexnya!
+# loc = memanggil baris/kol dg NAMA indexnya!
 # ================================================= 
 
 # print(df.loc[0])
@@ -37,7 +38,7 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.loc[:,['A','B']])
 # print(df.loc['20130102':'20130104',['A','B']])
 
-# iloc = memanggil baris/kol dg posisi index, harus INTEGER
+# iloc = memanggil baris/kol dg urutan index, harus INTEGER
 # =================================================
 
 # print(df.iloc[3])

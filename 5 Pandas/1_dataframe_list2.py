@@ -1,6 +1,7 @@
 # dataframe
 
 import pandas as pd 
+# DF dgn list akan membentuk df per DATA BARIS
 import numpy as np
 
 x = np.random.randint(10, size=10)
