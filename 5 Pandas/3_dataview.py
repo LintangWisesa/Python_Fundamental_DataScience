@@ -20,7 +20,9 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.sort_values(by='B', ascending=False))
 # print(df.sort_values(by=['B', 'A'], ascending=False))
 # print(df.sort_values(by=['B', 'A'], ascending=[False, True]))
-# print(df.set_index('kolom1'))
+
+# df = df.set_index('kolom1')
+# print(df)
 
 # print(df['A'])
 # print(df[['A', 'B']])
