@@ -6,7 +6,7 @@ import json
 # pip install chart_studio
 import plotly
 import chart_studio.plotly as py
-import plotly.graph_objs as go
+import plotly.graph_objects as go
 import numpy as np
 
 app = Flask(__name__)

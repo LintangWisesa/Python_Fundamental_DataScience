@@ -21,12 +21,19 @@ df = pd.DataFrame(data)
 g = df.groupby('kota')
 
 # show data for Jakarta
-print(g.get_group('Jakarta'))
+# print(g.get_group('Jakarta'))
 
-# show max val for each data in each kota
-print(g.max())
-print(g.min())
-print(g.mean())
+# # show max val for each data in each kota
+# print(g.max())
+# print(g.min())
+# print(g.mean())
 
-print(g.min(numeric_only='int'))
-print(g.min(level='suhu'))
+# print(g.min(numeric_only='int'))
+# print(g.min(level='suhu'))
+
+# get suhu max di bandung with group & not
+# print(g.get_group('Bandung').max()['suhu'])
+# print(df[df['kota'] == 'Bandung']['suhu'].max())
+
+# get data bandung when suhu = max
+print(df[df['kota'] == 'Bandung'].sort_values(by='suhu').iloc[0])
