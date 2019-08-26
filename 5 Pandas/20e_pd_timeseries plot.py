@@ -26,6 +26,7 @@ df = df.sort_index()
 
 # print(df['2019'])
 # print(df['2019-03'])
+# print(df['2016-03':'2017-03'])
 # print(df['2019-02-27':'2019-02-28'])
 # print(df['27-02-2019':'28-02-2019'])
 # print(df.loc['27-02-2019'])
@@ -38,8 +39,21 @@ df = df.sort_index()
 # plotting
 plt.plot(
     df.index, df['Close'], 'g-',
-    df.index, df['Open'], 'r-'
+    # df.index, df['Open'], 'r-'
+    # df['2017'].index, df['2017']['Open'], 'r-'
 )
+
+# set axis
+import matplotlib.dates as mdates
+
+ax = plt.gca()  # get current axis
+ax.xaxis.set_major_locator(mdates.DayLocator(   # WeekdayLocator, MonthLocator, YearLocator
+    interval=5
+))
+ax.xaxis.set_major_formatter(mdates.DateFormatter(
+    '%d-%m-%Y'  # '%d-%m-%y'  '%D'  '%b %y'
+))
+
 plt.xlabel('Tanggal')
 plt.ylabel('Rp')
 plt.xticks(rotation=65)

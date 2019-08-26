@@ -21,7 +21,9 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.sort_values(by=['B', 'A'], ascending=False))
 # print(df.sort_values(by=['B', 'A'], ascending=[False, True]))
 
-# df = df.set_index('kolom1')
+# df = df.set_index('kolom1')           
+# atau bisa pakai inplace=True
+# df.set_index('kolom1', inplace=True)
 # print(df)
 
 # print(df['A'])
