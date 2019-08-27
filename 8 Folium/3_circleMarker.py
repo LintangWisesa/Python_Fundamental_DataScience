@@ -18,7 +18,7 @@ folium.Marker(
 ).add_to(m)
 
 # circle area around marker
-folium.CircleMarker(
+folium.Circle(
     location = [-6.1753924, 106.8271528],
     radius = 130,
     popup = '<i>Taman Monas</i>',
