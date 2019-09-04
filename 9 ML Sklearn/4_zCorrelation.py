@@ -20,13 +20,15 @@ print(df)
 corr = df.corr()
 print(corr)
 
-# plot with seaborn heatmap
-import seaborn as sb
-sb.heatmap(corr)
-plt.show()
-
 # plot with matplotlib heatmap
 import matplotlib.pyplot as plt
 plt.imshow(corr, cmap='hot_r')
+plt.xticks(np.arange(4), df.columns)
+plt.yticks(np.arange(4), df.columns)
 plt.colorbar()
+plt.show()
+
+# plot with seaborn heatmap
+import seaborn as sb
+sb.heatmap(corr)
 plt.show()
