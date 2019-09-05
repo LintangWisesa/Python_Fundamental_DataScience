@@ -18,3 +18,7 @@ print(arrayGambar)
 ### show result as image with pillow
 hasil = Image.fromarray(arrayGambar, 'L')
 hasil.show()
+
+### save as image
+hasil.save('result.png')
+hasil.save('result.jpg')

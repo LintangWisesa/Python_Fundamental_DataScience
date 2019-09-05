@@ -47,7 +47,10 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=.2)
 
 # print(len(x_train)) # 80%
 # print(len(x_test))  # 20%
-# print(x_train)
+# print(x_train.iloc[0])
+# print(x_test.iloc[0])
+# print(y_train.iloc[0])
+# print(y_test.iloc[0])
 
 # ======================================
 

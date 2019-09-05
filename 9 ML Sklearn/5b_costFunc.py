@@ -24,7 +24,7 @@ def gradien(x,y):
         b_curr = b_curr - learning_rate * bd
         print('m {}, b {}, cost {}, iterasi {}'.format(m_curr, b_curr, cost, i))
 
-# gradien(x,y)
+gradien(x,y)
 
 # linear regression
 from sklearn.linear_model import LinearRegression
