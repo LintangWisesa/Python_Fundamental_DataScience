@@ -39,7 +39,7 @@ dfDummies = pd.get_dummies(df['kota'])
 # ==========================================
 
 # join df & dfDummies lalu drop kolom kota:
-dfFull = pd.concat([df, dfDummies], axis='columns')
+dfFull = pd.concat([df, dfDummies], axis='columns') # axis = 1
 dfFull = dfFull.drop(['kota'], axis='columns')
 # print(dfFull)
 
