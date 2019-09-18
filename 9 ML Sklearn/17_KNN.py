@@ -3,11 +3,11 @@
 
 # k in KNN is a parameter that refers to the number of nearest neighbors to include in the majority voting process
 # how to choose k? => parameter tuning process: 
-# sqrt(n): square root of total number of data point
-# choose odd value to avoid confussion between 2 classes of data
+# 1. sqrt(n): square root of total number of data point
+# 2. choose odd value to avoid confussion between 2 classes of data
 
 import numpy as np
-import pandas as pd
+import pandas as pd:
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_digits
 digits = load_digits()
@@ -20,7 +20,9 @@ iris = load_iris()
 
 df = pd.DataFrame(iris['data'], columns=iris['feature_names'])
 df['target'] = iris['target']
-df['spesies'] = df['target'].apply(lambda x: iris['target_names'][x])
+df['spesies'] = df['target'].apply(
+    lambda x: iris['target_names'][x]
+)
 # print(df)
 
 # =============================================
@@ -57,7 +59,9 @@ model = KNeighborsClassifier(
 
 model.fit(x_train, y_train)
 
+print(x_test.iloc[0])
 print(model.predict([x_test.iloc[0]]))
 print(y_test.iloc[0])
 
+print(model.predict_proba([x_test.iloc[0]]))
 print(model.score(x_test, y_test) * 100, '%')
