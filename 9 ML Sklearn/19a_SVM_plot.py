@@ -87,7 +87,7 @@ print(len(x_test))      #  30 = 20% (hasil dari test_size = .2)
 # svm
 from sklearn.svm import SVC
 # model = SVC()
-model = SVC(gamma='auto')   # avoid warning
+model = SVC(gamma='auto', probability=True)   # avoid warning
 
 # train data
 model.fit(x_train, y_train)
