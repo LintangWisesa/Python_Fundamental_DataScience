@@ -105,8 +105,13 @@ def get_score(model, x_train, x_test, y_train, y_test):
 # DENGAN K-FOLD CROSS VALIDATON SCORE! so easy
 # ================================================
 
-
 from sklearn.model_selection import cross_val_score
-print(cross_val_score(LogisticRegression(), digits['data'], digits['target']))
-print(cross_val_score(SVC(), digits['data'], digits['target']))
-print(cross_val_score(RandomForestClassifier(n_estimators=40), digits['data'], digits['target']))
+print(cross_val_score(
+    LogisticRegression(), digits['data'], digits['target']), cv=5
+)
+print(cross_val_score(
+    SVC(), digits['data'], digits['target']), cv=5
+)
+print(cross_val_score(
+    RandomForestClassifier(n_estimators=40), digits['data'], digits['target']), cv=5
+)
