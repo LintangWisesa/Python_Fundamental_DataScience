@@ -2,6 +2,7 @@
 
 from sklearn.feature_extraction.text import CountVectorizer
 
+# text = [ A , B ]
 text = ["London Paris London", "Paris Paris London"]
 cv = CountVectorizer()
 

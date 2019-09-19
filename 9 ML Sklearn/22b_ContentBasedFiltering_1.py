@@ -49,3 +49,5 @@ print(sorted_similar_movies[:5])
 # menampilkan 5 judul movie yg mirip
 for i in sorted_similar_movies[:5]:
     print(df.iloc[i[0]])
+    # print(df.iloc[i[0]]['title'])
+    # print(df.iloc[i[0]]['title'], i[1])

@@ -115,3 +115,14 @@ print(cross_val_score(
 print(cross_val_score(
     RandomForestClassifier(n_estimators=40), digits['data'], digits['target']), cv=5
 )
+
+# hasilnya lalu dirata-rata
+print(np.mean(cross_val_score(
+    LogisticRegression(), digits['data'], digits['target']), cv=5
+))
+print(np.mean(cross_val_score(
+    SVC(), digits['data'], digits['target']), cv=5
+))
+print(np.mean(cross_val_score(
+    RandomForestClassifier(n_estimators=40), digits['data'], digits['target']), cv=5
+))
