@@ -47,11 +47,11 @@ def svmplot(axisfig, model, length, width):
     p = model.predict(np.c_[length.ravel(), width.ravel()])
     p = p.reshape(length.shape)
     hasil = axisfig.contourf(
-        length, width, p, cmap='coolwarm', alpha=.5
+        length, width, p, cmap='hot', alpha=.5
     )
     return hasil
 
-fig = plt.figure()
+fig = plt.figure('SVM', figsize=(12,6))
 
 # plot sl vs sw
 ax = plt.subplot(121)
@@ -59,18 +59,22 @@ svmplot(ax, modelS, sl, sw)
 plt.plot(
     df[df['target'] == 0]['SL'],
     df[df['target'] == 0]['SW'],
-    'ro'
+    'ko'
 )
 plt.plot(
     df[df['target'] == 1]['SL'],
     df[df['target'] == 1]['SW'],
-    'bo'
+    'ro'
 )
 plt.plot(
     df[df['target'] == 2]['SL'],
     df[df['target'] == 2]['SW'],
     'yo'
 )
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Sepal Width (cm)')
+plt.legend(['Setosa', 'Versicolor', 'Virginica'])
+plt.title('Sepal Length vs Sepal Width')
 
 # plot pl vs pw
 ax = plt.subplot(122)
@@ -78,17 +82,22 @@ svmplot(ax, modelP, pl, pw)
 plt.plot(
     df[df['target'] == 0]['PL'],
     df[df['target'] == 0]['PW'],
-    'ro'
+    'ko'
 )
 plt.plot(
     df[df['target'] == 1]['PL'],
     df[df['target'] == 1]['PW'],
-    'bo'
+    'ro'
 )
 plt.plot(
     df[df['target'] == 2]['PL'],
     df[df['target'] == 2]['PW'],
     'yo'
 )
+plt.xlabel('Petal Length (cm)')
+plt.ylabel('Petal Width (cm)')
+plt.legend(['Setosa', 'Versicolor', 'Virginica'])
+plt.title('Petal Length vs Petal Width')
 
+plt.savefig('19b_SVM_easiest.png')
 plt.show()
