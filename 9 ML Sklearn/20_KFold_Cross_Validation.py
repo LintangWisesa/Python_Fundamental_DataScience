@@ -15,7 +15,11 @@ from sklearn.datasets import load_digits
 digits = load_digits()
 
 from sklearn.model_selection import train_test_split
-x_train, x_test, y_train, y_test = train_test_split(digits['data'], digits['target'], test_size=.3)
+x_train, x_test, y_train, y_test = train_test_split(
+    digits['data'], 
+    digits['target'], 
+    test_size=.1
+)
 
 
 # ================================================
