@@ -23,6 +23,9 @@ modelrf = RandomForestClassifier(n_estimators=10)
 from sklearn.model_selection import KFold
 kf = KFold(n_splits=3) # jumlah 'lipatan'
 
+# for train_index, test_index in kf.split([1,2,3,4,5,6,7,8,9]):
+#     print(train_index, test_index)
+
 def get_score(model, x_train, x_test, y_train, y_test):
     model.fit(x_train, y_train)
     return model.score(x_test, y_test)
