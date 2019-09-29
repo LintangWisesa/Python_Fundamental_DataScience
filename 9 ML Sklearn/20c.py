@@ -13,36 +13,33 @@ x_train, x_test, y_train, y_test = train_test_split(
 )
 
 from sklearn.linear_model import LogisticRegression
+modellr = LogisticRegression(solver='lbfgs', multi_class='auto', max_iter=10000)
 from sklearn.svm import SVC
+modelsv = SVC(gamma='auto', probability=True)
 from sklearn.ensemble import RandomForestClassifier
+modelrf = RandomForestClassifier(n_estimators=10)
 
-# Stratified K-Fold, hasil konstan
-from sklearn.model_selection import StratifiedKFold
-folds = StratifiedKFold(n_splits=3)
-from sklearn.model_selection import KFold
-kf = KFold(n_splits=3)
+from sklearn.model_selection import cross_val_score
+# print(cross_val_score(
+#         modellr, digits['data'], digits['target'], cv=5)
+# )
+# print(cross_val_score(
+#     modelsv, digits['data'], digits['target'], cv=5)
+# )
+# print(cross_val_score(
+#     modelrf, digits['data'], digits['target'], cv=5)
+# )
 
-def get_score(model, x_train, x_test, y_train, y_test):
-    model.fit(x_train, y_train)
-    return model.score(x_test, y_test)
-
-score_lr = []
-score_sv = []
-score_rf = []
-
-for train_index, test_index in kf.split(digits['data']):
-    x_train = digits['data'][train_index]
-    x_test = digits['data'][test_index]
-    y_train = digits['target'][train_index]
-    y_test = digits['target'][test_index]
-
-    score_lr.append(get_score(LogisticRegression(solver='lbfgs', multi_class='auto', max_iter=10000), x_train, x_test, y_train, y_test))
-    score_sv.append(get_score(SVC(gamma='auto', probability=True), x_train, x_test, y_train, y_test))
-    score_rf.append(get_score(RandomForestClassifier(n_estimators=10), x_train, x_test, y_train, y_test))
-
-# print(score_lr)
-# print(score_sv)
-# print(score_rf)
-print(np.mean(score_lr))
-print(np.mean(score_sv))
-print(np.mean(score_rf))
+# rata2 score
+print(
+    np.mean(cross_val_score(
+        modellr, digits['data'], digits['target'], cv=5))
+)
+print(
+    np.mean(cross_val_score(
+        modelsv, digits['data'], digits['target'], cv=5))
+)
+print(
+    np.mean(cross_val_score(
+        modelrf, digits['data'], digits['target'], cv=5))
+)
