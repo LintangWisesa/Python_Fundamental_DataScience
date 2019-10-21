@@ -13,6 +13,8 @@ print(kata.upper().isupper())
 
 print(len(kata))
 print(kata[3])
+print(kata[0:8])
+print(kata[0:len(kata):2])
 print(kata.index('dhika'))
 print(kata.replace('dhika', 'caraka'))
 

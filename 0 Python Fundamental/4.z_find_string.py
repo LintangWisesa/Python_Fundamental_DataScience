@@ -1,4 +1,4 @@
-# Cari Huruf
+# Cari jumlah Huruf
 
 kalimat = 'Hari ini Andi tidak sekolah.'
 cari = 'a'
@@ -8,7 +8,7 @@ print(jumlah)
 
 ################################
 
-# Cari Kata
+# Cari jumlah Kata
 
 kalimat = 'sekolah Hari ini Andi tidak Sekolah.'
 cari = 'sekolah'
