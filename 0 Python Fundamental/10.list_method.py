@@ -23,12 +23,14 @@ angka.pop(2)
 print(angka)
 
 angka.sort()
+# angka.sort(reverse=True)
 print(angka)
 
 angka.reverse()
 print(angka)
 
 angka2 = angka.copy()
+angka2 = angka[::2].copy()
 print(angka2)
 
 angka2[0:2] = [12, 13] 

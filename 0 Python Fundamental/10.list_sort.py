@@ -1,4 +1,4 @@
-# sortit hanya 3 elemen pertama
+# sortir hanya 3 elemen pertama
 
 angka = [14, 2, 34, 12, 67, 2]
 print(angka)
@@ -13,3 +13,10 @@ print(angka)
 
 # x.sort(reverse = True)
 # print(x)
+
+x = [1, 2, 3, 4, 5, 3]
+
+def duplicates(list, item):
+    return [i for i, x in enumerate(lst) if x == item]
+
+print(duplicates(x, 3))

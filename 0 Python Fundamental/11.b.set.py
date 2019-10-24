@@ -1,10 +1,21 @@
 
 # list = [x,y,z]
-# tuple = (x,y,z) no assignment
-# set = {x,y,z} no indexing
+# tuple = (x,y,z) immutable, no assignment
+# set = {x,y,z} no indexing, like set on math (himpunan)
+
+# 1. Sets are unordered.
+# 2. Set elements are unique. Duplicate elements are not allowed.
+# 3. A set itself may be modified, but the elements contained in the set must be of an immutable type.
+# (elemen set tidak bisa berupa list & dictionary), tuple bisa krn immutable)
+
+x = {1, 2, 3}
+y = set([1, 2, 3])
+z = set((1, 2, 3))
+print(x, type(x))
+print(y, type(x))
+print(z, type(x))
 
 tes = {1, 2, 'Andi'}
-
 print(type(tes))
 
 # print every element
