@@ -1,3 +1,15 @@
+
+if x and y:
+    print('Anda x & y')
+elif x and not y:
+    print('Anda x')
+elif not x and y:
+    print('Anda y')
+else:
+    print('Anda siapa?')
+
+# =============================================== 
+
 jomblo = True
 bekerja = True
 

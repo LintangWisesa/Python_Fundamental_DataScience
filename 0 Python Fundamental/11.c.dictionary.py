@@ -43,6 +43,7 @@ print(namaBulan)
 namaBulan.update({13: 'Xpanda'})
 print(namaBulan)
 
+
 # remove an item
 namaBulan.pop(13)
 print(namaBulan)
@@ -53,10 +54,15 @@ print(namaBulan)
 # melihat daftar key
 print(namaHari.keys())
 print(list(namaHari.keys()))
+print(list(namaHari))       # simplest ways
 
 # melihat daftar value
 print(namaHari.values())
 print(list(namaHari.values()))
+
+# melihat key & value as tuple
+print(namaHari.items())
+print(list(namaHari.items()))
 
 # mencari key dari value-nya
 print(list(namaHari.keys())[list(namaHari.values()).index('Senin')])
