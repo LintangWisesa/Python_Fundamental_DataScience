@@ -9,7 +9,7 @@
 # (elemen set tidak bisa berupa list & dictionary), tuple bisa krn immutable)
 
 # ===============================
-# UNION = all elements on set
+# UNION = all elements on set (gabungan)
 
 x = {1, 2, 3}
 y = {4, 2, 6}
@@ -23,7 +23,7 @@ print(y.union(x))
 print(x.union(y, z))
 
 # ===============================
-# INTERSECTION = elements between sets
+# INTERSECTION = elements between sets (irisan)
 
 print(x & y)
 print(x & z)
@@ -34,7 +34,7 @@ print(y.intersection(x))
 print(x.intersection(y, z))
 
 # ===============================
-# DIFFERENCE = elements only on a sets
+# DIFFERENCE = elements only on a sets (selisih)
 
 # only on x
 print(x - y)
@@ -45,3 +45,18 @@ print(x - y - z)
 print(x.difference(y))
 print(y.difference(x))
 print(x.difference(y, z))
+
+# ===============================
+# SYMMETRIC DIFFERENCE
+
+print(x ^ y)
+print(x ^ z)
+print(x ^ y ^ z)
+
+print(x.symmetric_difference(y))
+print(y.symmetric_difference(x))
+print(x.symmetric_difference(y, z))
+
+# soal:
+# https://brainly.co.id/tugas/7707409
+# https://brainly.co.id/tugas/12307211

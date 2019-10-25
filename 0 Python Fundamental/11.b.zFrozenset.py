@@ -9,6 +9,6 @@ print(x)
 print(type(x))
 print(len(x))
 
-x.add(4)
-x.pop()
-x.clear()
+x.add(4)    # error
+x.pop()     # error
+x.clear()   # error
