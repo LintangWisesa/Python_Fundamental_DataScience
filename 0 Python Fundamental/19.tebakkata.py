@@ -6,7 +6,7 @@ overTebakan = False
 
 while tebakan != kataRahasia and not(overTebakan):
     if jumlahTebakan < batasTebakan:
-        tebakan = input('Masukkan kata tebakan: ')
+        tebakan = input(f'Input ke {jumlahTebakan+1} Masukkan kata tebakan: ')
         jumlahTebakan += 1
     else:
         overTebakan = True
