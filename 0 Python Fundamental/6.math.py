@@ -7,3 +7,4 @@ print(math.ceil(3.2))
 
 z = 6
 print(math.factorial(z))
+print(math.pow(2,3))
