@@ -1,4 +1,6 @@
 
+# recursive function
+
 def pangkat(x,y):
     if (y == 1):
         return x
