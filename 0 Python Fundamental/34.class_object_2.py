@@ -1,3 +1,5 @@
+
+# class is a code template for creating objects.
 class Siswa:
     def __init__(self, nama, usia, jurusan):
         self.nama = nama

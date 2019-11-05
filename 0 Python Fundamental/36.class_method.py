@@ -1,3 +1,4 @@
+# class Siswa with prop: nama usia ipk & method: cumlaude
 class Siswa:
     def __init__(self, nama, usia, ipk):
         self.nama = nama
