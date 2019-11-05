@@ -30,5 +30,5 @@ plt.show()
 
 # plot with seaborn heatmap
 import seaborn as sb
-sb.heatmap(corr)
+sb.heatmap(corr, annot=True)
 plt.show()
