@@ -6,21 +6,32 @@ class X:
         self.gelar = gelar
 
 # Cara 1
-class Y(X):
-    pass
+# class Y(X):
+#     def __init__(self, nama, gelar, univ):
+#         X.__init__(self, nama, gelar)
+#         self.kampus = univ
 
-# Cara 2
+# cara 2
 class Y(X):
-    def __init__(self, nama, gelar):
-        X.__init__(self, nama, gelar)
-
-# cara 3
-class Y(X):
-    def __init__(self, nama, gelar):
+    def __init__(self, nama, gelar, univ):
         super().__init__(nama, gelar)
+        self.kampus = univ
 
-objX = X('Andi', 'Prof')
-objY = Y('Budi', 'Dr.')
+objX = Y('Andi', 'Prof', 'UGM')
+# print(vars(objX))
 
-print(vars(objX))
-print(vars(objY))
+########################################
+
+lass Manusia:
+    def __init__(self, nama):
+        self.nama = nama
+
+class Pria(Manusia):
+    def __init__(self, nama):
+        Manusia.__init__(self, nama)
+        self.gender = 'Laki-Laki'
+
+objA = Manusia('Andi')
+objB = Pria('Andi')
+print(vars(objA))
+print(vars(objB))
