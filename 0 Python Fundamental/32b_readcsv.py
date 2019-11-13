@@ -11,6 +11,7 @@ with open('32a1.csv', 'r') as csvFile:
 
     reader = csv.reader(csvFile)
     print(reader)
+    # print(list(reader))
     for row in reader:
         print(row)
 
