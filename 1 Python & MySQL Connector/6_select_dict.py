@@ -7,7 +7,7 @@ mydb = mysql.connector.connect(
   database="datascience"
 )
 
-mycursor = mydb.cursor()
+mycursor = mydb.cursor(dictionary=True)
 
 mycursor.execute("SELECT * FROM users")
 myresult = mycursor.fetchall()
