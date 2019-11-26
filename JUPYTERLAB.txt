@@ -4,5 +4,6 @@ $ pip install jupyterlab
 
 // launch
 $ jupyter lab
+$ py -m jupyter lab
 
 // will be run on http://localhost:8888/lab
