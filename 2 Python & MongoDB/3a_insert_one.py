@@ -6,4 +6,4 @@ mydb = myclient["py_mongo"]
 mycol = mydb["users"]
 
 mydata = { "nama": "Andi", "usia": "27" }
-x = mycol.insert_one(mydata)
+mycol.insert_one(mydata)

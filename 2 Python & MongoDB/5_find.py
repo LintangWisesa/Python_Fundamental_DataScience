@@ -11,3 +11,8 @@ print(list(mycol.find()))
 # print every data
 for x in mycol.find():
   print(x)
+
+# ===========================================
+
+nama = ['Andi', 'Euis', 'Fafa']
+print(list(mycol.find({'nama': {'$in': nama}})))
