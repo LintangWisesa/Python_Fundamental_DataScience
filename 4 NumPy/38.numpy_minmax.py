@@ -1,7 +1,11 @@
 
 import numpy as np
 
-a = np.array([1,3,5,7,9])
+x = [1,2,3,4,5]
+y = np.array(x)
 
-print(a.min())
-print(a.max())
+print(max(x))
+print(min(x))
+
+print(y.max())
+print(y.min())

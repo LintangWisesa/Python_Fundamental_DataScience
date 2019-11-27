@@ -14,6 +14,6 @@ print(y)
 print(z)
 
 x = 2 * np.pi
-y = np. sin(x)
+y = np.sin(x)
 print(x)
 print(y)

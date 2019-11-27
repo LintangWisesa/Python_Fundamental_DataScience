@@ -4,6 +4,7 @@ import numpy as np
 # satu variabel : Solve 3x = 9
 # | 3 | | x | = | 9 |
 
+# a = np.array([3]).reshape(1,1)
 a = np.array([[3]])
 b = np.array([9])
 
