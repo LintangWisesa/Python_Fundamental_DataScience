@@ -18,3 +18,7 @@ print(a.shape)  # output: (8,)
 a = a.reshape(1,8,1)    # 1 x 8 x 1 = 8 = size
 print(a)
 print(a.shape)  # output: (8,)
+
+a = a.reshape(2, -1)    # -1 otomatis menentukan col nya
+print(a)
+print(a.shape)  # output: (8,)
