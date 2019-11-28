@@ -19,5 +19,9 @@ y = np.vstack([a, b])
 print(y)
 
 # Method 3:
+z = np.row_stack((a, b))
+print(z)
+
+# Method 4
 z = np.r_[a, b]
 print(z)

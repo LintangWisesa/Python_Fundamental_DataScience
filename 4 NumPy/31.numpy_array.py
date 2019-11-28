@@ -13,8 +13,7 @@ print(z[z % 2 != 0])
 
 # z[z % 2 != 0] = -1
 # print(z)
-
-out = np.where(z % 2 == 1, -1, z)
+out = np.where(z % 2 != 0, -1, z)
 print(out)
 
 # =======================================

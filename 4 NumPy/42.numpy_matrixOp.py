@@ -8,6 +8,3 @@ print(a+b)
 print(a-b)
 print(a*b)
 print(a/b)
-
-print(np.vstack((a,b)))
-print(np.hstack((a,b)))
