@@ -15,12 +15,22 @@ print(x[0:6:2])
 y = ['Andi', 'Budi', 'Caca', 'Deni', 'Euis']
 z = pd.Series(y, index = ['a','b','c','d','e'])
 print(z)
+print(type(z))
 print(z['a'])
 
 # y = ['Andi', 'Budi', 'Caca', 'Deni', 'Euis']
 # z = pd.Series(y, index = ['a','b','c','d','e'], name='Data')
 # print(z)
 # print(z['a'])
+
+a = [9,2,5,3,4]
+b = pd.Series(
+    data = {'a': 2, 'b': 3},    # from dict
+    # data = 23                 # from scalar value
+    name = 'Test'
+)
+print(b)
+print(b.name)
 
 plt.plot(x, x)
 plt.show()
