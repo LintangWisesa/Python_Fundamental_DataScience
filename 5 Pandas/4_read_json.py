@@ -8,6 +8,7 @@ print(df)
 cols = df.columns.tolist()
 print(cols)
 cols = cols[-1:] + cols[:-1]
+print(cols)
 df = df[cols]
 print(df)
 

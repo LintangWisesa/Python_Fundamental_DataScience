@@ -1,6 +1,9 @@
 import pandas as pd 
 df = pd.read_csv('4_datarokok.csv')
 
+# set delimiter
+# df = pd.read_csv('4_datarokok.csv', delimiter=';')
+
 # menjadikan elemen ke-3 (baris ke 2 di CSV) sbg judul kolom
 # df = pd.read_csv('4_datarokok.csv', header=3)
 

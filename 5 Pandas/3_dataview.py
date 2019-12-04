@@ -24,6 +24,12 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.describe())
 # print(df.describe().loc['mean'])
 
+# print(df['Gaji'].max())
+# print(df['Gaji'].min())
+# print(df['Gaji'].mean())
+# print(df['Gaji'].median())
+# print(df['Gaji'].mode())
+
 # print(df.sort_index(axis=0, ascending=False))     # axis=0 index row
 # print(df.sort_index(axis=1, ascending=False))     # axis=0 index col
 

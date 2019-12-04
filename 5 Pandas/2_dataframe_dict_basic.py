@@ -13,3 +13,6 @@ df2 = pd.DataFrame(data)
 print(df2)
 print(df2.dtypes)
 print(df2.shape)
+
+# change datatype!
+df2['gaji'] = df['gaji'].astype('int64')
