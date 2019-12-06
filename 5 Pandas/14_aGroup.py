@@ -20,6 +20,9 @@ df = pd.DataFrame(data)
 # group dataframe by 'kota'
 g = df.groupby('kota')
 
+# get group names
+# print(g.groups.keys())
+
 # show data for Jakarta
 # print(g.get_group('Jakarta'))
 
