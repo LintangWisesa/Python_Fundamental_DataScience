@@ -15,8 +15,8 @@ df.rename(columns={
 print(df)
 
 df.to_sql(
-    name = 'nama_mysql_tabel',
+    name = 'nama_mysql_tabel',  # name must be lowercase
     con = engine,
     index = False,
-    if_exists = 'append'
+    if_exists = 'append'    # fail, replace, append
 )

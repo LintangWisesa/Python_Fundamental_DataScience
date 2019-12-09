@@ -1,12 +1,13 @@
-# pip install pymysql
-# pip install sqlalchemy
+# pd.read_sql
 
 import pandas as pd
 import sqlalchemy
 
 engine = sqlalchemy.create_engine('mysql+pymysql://root:pass@localhost:3306/database')
 
-df = pd.read_sql_table('namatabel', engine)
-# df = pd.read_sql_table('namatabel', engine, columns=['kolom1'])
+query = '''
+select * from data
+'''
 
-print(df)
+df = pd.read_sql('namatabel', engine)
+df = pd.read_sql(query, engine)
