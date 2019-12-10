@@ -11,3 +11,5 @@ select * from data
 
 df = pd.read_sql('namatabel', engine)
 df = pd.read_sql(query, engine)
+# on MAC
+# df = pd.read_sql(query, engine.raw_connection())

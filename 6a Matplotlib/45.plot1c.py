@@ -5,17 +5,27 @@ a = [1,2,3,4,5,6,7,8,9]
 a = np.array(a)
 b = [1,4,9,3,5,8,4,2,5]
 
+# LINE STYLE
 # - : line
 # -- : dash 
+# : : dots line
+# -. : line dot
+
+# MARKER STYLE: https://matplotlib.org/3.1.1/api/markers_api.html
 # o : point
 # s : square
 # ^ : segitiga
 # * : star
 # . : dot
 # + : plus
+
 # g: green, b: blue, r: red, y: yellow, k: black
 # warna dg hexcode: #FF0000, #00FF00, #000000 dst
 # warna dg nama: grey, gray, lightblue
+
+# 'gs:'  =>  color green, marker square, line .... 
+# 'g:s'  =>  color green, marker square, line ....
+# 'r*--' =>  color red, marker star, line ---- 
 
 plt.plot(a,a,'g--', a,a**2,'r--', a,a**3,'bs', a,a**3,'y--')
 # plt.plot(a,a,'g-o', a,a**2,'r-*', a,a**3,'bs', a,a**3,'y-^')

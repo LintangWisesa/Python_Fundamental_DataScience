@@ -21,4 +21,19 @@ for i in x:
 
 plt.grid(True)
 plt.legend(['Data'], loc=4)
-plt.show()
+# plt.show()
+
+# ===========================
+
+x = np.array([1,2,3,4,5,6,7,8,9])
+
+plt.plot(x, x**2, color='g', markerfacecolor='y',
+    markeredgecolor = 'y', marker='o', linestyle='-', 
+    markersize=6, linewidth = .1, label = 'My Data'
+)
+plt.grid(True)
+
+for i in x**2:
+    plt.text(x[list(x**2).index(i)]-.2, i+2, i)
+
+# plt.show()
