@@ -16,8 +16,8 @@ plt.pie(slice, labels=activity, autopct='%1.1f%%', textprops={'color':"r"})
 
 # custom warna value & label:
 # x, y, z = plt.pie(slice, labels=activity, autopct='%1.1f%%', textprops={'color':"r"})
-# for autotext in z:
-#     autotext.set_color('white')
+# for i in z:
+#     i.set_color('white')
 
 plt.title('Tes Plotting Data\nby Lintang Wisesa')
 plt.show()
