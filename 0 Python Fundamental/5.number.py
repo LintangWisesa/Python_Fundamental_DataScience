@@ -2,6 +2,7 @@
 
 print(4 + 5 * 3)
 print((4 + 5) * 3)
+print(17 // 3)  # floor division
 
 no1 = 12
 no2 = 31.9

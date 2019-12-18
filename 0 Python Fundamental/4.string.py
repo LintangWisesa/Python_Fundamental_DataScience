@@ -16,10 +16,12 @@ print(kata[3])
 print(kata[0:8])
 print(kata[0:len(kata):2])
 print(kata.index('dhika'))
-print(kata.replace('dhika', 'caraka'))
-
 print(kata.split('a'))
 print(kata.split('a')[1])
+
+z = 'Andi dita'
+print(z.replace('di', 'na'))
+print(z.replace('di', 'na', 1)) # old, new, count
 
 # ================================
 

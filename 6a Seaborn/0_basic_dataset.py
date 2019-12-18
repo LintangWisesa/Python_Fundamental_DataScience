@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style="darkgrid")
 
+# https://github.com/mwaskom/seaborn-data
 data = sns.load_dataset('flights')
 print(data)
 
-# https://github.com/mwaskom/seaborn-data
+data = data.pivot('month', 'year', 'passengers')
+print(data)
