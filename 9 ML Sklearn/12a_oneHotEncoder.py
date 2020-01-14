@@ -1,4 +1,4 @@
-# one hot encoding = membuat 1 dummy var kolom dg val = 0 atau 1
+# one hot encoding = membuat 1 dummy var kolom dg val = boolean (0 atau 1)
 
 import pandas as pd
 import numpy as np

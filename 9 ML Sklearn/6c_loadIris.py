@@ -4,6 +4,7 @@ from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
 
 dataIris = load_iris()
+# dataIris = load_iris(return_X_y=True)
 # print(dir(dataIris))
 # print(dataIris['target_names'])
 
