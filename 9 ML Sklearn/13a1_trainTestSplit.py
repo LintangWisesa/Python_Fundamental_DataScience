@@ -40,9 +40,9 @@ y = df['harga']
 
 from sklearn.model_selection import train_test_split
 
-# test = 20% & training = 80%
-x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=.2)
-# x_train, x_test, y_train, y_test = train_test_split(x,y,train_size=.8)
+
+x_train, x_test, y_train, y_test = train_test_split(x,y) # default: test=25% & training=75%
+# x_train, x_test, y_train, y_test = train_test_split(x,y,train_size=.8)  # test=20% & training=80%
 # x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=.2,random_state=10)
 
 # print(len(x_train)) # 80%

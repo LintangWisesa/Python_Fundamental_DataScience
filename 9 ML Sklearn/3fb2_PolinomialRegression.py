@@ -7,13 +7,14 @@ import pandas as pd
 
 from sklearn.preprocessing import PolynomialFeatures
 # x = np.array([2, 3, 4])
-# poly = PolynomialFeatures(3, include_bias=False)
+# poly = PolynomialFeatures(3, include_bias=False)      
+# nilai 3 = brp pangkat yg akan diproses. out = [[2,4,8], [3,9,7], [4,16,64]]
 # print(poly.fit_transform(x.reshape(-1,1)))
 
 from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import make_pipeline
 poly_model = make_pipeline(
-    PolynomialFeatures(7),
+    PolynomialFeatures(15),
     LinearRegression()
 )
 
