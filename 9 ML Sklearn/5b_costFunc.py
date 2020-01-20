@@ -8,7 +8,7 @@ y = np.array([5, 7, 9, 11, 13])
 
 def gradien(x,y):
     m_curr = b_curr = 0
-    iterasi = 1000
+    iterasi = 100000
     n = len(x)
     learning_rate = 0.001
     # change iterasi & learning rate!     
