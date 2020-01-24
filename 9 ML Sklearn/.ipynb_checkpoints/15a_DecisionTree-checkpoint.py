@@ -67,7 +67,7 @@ print(model.predict([[0,0,0]]))
 print(model.predict([[1,0,0]]))
 print(model.predict([[2,0,0]]))
 
-# draw the decision tree raph
+# draw the decision tree graph
 # import decision tree graph as .dot file
 tree.export_graphviz(
     model.fit(inputs_n, target), 
