@@ -22,3 +22,14 @@ cari = 'sekolah'
 kalcari = kalimat.upper().replace(cari.upper(), '')
 jmlkata = int((len(kalimat) - len(kalcari)) / len(cari))
 print(f'Jumlah kata \'{cari}\' ada = {jmlkata}')
+
+################################
+
+kata = 'Hari ini Hari tidak masuk sekolah karena hari libur'
+cari = 'hari'
+# berapa kata 'Hari'?
+print(kata.lower().count('hari'))
+
+kacari = kata.upper().replace(cari.upper(), '')
+jmlkata = int((len(kata) - len(kacari)) / len(cari))
+print(f'Jumlah kata \'{cari}\' ada = {jmlkata}')
