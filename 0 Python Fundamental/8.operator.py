@@ -11,3 +11,6 @@ print(a)
 
 a /= 2  # atau a //= 2 pada numpy
 print(int(a))
+
+a **= 2
+print(a)

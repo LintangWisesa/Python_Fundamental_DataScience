@@ -14,6 +14,9 @@ print(angka)
 # x.sort(reverse = True)
 # print(x)
 
+# ===========================
+# check duplicates
+
 x = [1, 2, 3, 4, 5, 3]
 
 def duplicates(list, item):

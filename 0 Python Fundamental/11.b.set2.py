@@ -55,7 +55,7 @@ print(x ^ y ^ z)
 
 print(x.symmetric_difference(y))
 print(y.symmetric_difference(x))
-print(x.symmetric_difference(y, z))
+# print(x.symmetric_difference(y, z)) # ERROR!
 
 # soal:
 # https://brainly.co.id/tugas/7707409

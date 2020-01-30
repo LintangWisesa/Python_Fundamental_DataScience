@@ -7,6 +7,7 @@ print(kata + ' Startup School')
 
 print(kata.lower())
 print(kata.upper())
+print(kata.capitalize())
 print(kata.islower())
 print(kata.isupper())
 print(kata.upper().isupper())

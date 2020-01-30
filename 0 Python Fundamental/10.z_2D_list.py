@@ -8,5 +8,13 @@ matriks = [
     [0]
 ]
 
-print(matriks[0][1])
-print(matriks[2][2])
+# print(matriks[0][1])
+# print(matriks[2][2])
+
+# ===========================
+
+a = [[1, 2, 3], [4, 5, 6]]
+b = [a]
+
+print(b[0][1][0])
+print(b[0][0][1])

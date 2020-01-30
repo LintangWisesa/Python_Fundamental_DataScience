@@ -14,6 +14,7 @@ z = set((1, 2, 3))
 print(x, type(x))
 print(y, type(x))
 print(z, type(x))
+print(len(x))
 
 tes = {1, 2, 'Andi'}
 print(type(tes))
@@ -41,7 +42,7 @@ print(tes)
 tes.remove('Deni')
 print(tes)
 
-# remove elements = .discard()
+# remove elements = .discard() / if element doesnt exist -> NO error
 tes.discard('Caca')
 print(tes)
 

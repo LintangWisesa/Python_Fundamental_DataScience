@@ -31,18 +31,14 @@ print(namaBulan.get('11'))
 print(namaBulan.get('13'))
 print(namaBulan.get('14', 'Maaf, data tidak ditemukan'))
 
-# change value
-namaBulan[2] = 'February'
-print(namaBulan[2])
-
-# add item
-namaBulan[13] = 'Xpander'
+namaBulan[2] = 'February'   # change value
+namaBulan[13] = 'Xpander'   # add item
 print(namaBulan)
 
-# update
-namaBulan.update({13: 'Xpanda'})
+# update: change value / add item 
+namaBulan.update({2: 'Xpander'})
+namaBulan.update({13: 'Pajero', 14: 'Innova'})
 print(namaBulan)
-
 
 # remove an item
 namaBulan.pop(13)
@@ -66,3 +62,30 @@ print(list(namaHari.items()))
 
 # mencari key dari value-nya
 print(list(namaHari.keys())[list(namaHari.values()).index('Senin')])
+
+# ====================================
+# zip list to dict
+
+# [(1, 'Andi'), (2, 'Budi'), (3, 'Caca')] => {1: 'Andi', 2: 'Budi', 3: 'Caca'}
+a = [1,2,3]
+b = ['Andi', 'Budi', 'Caca']
+
+c = zip(a, b)
+# c = list(zip(a, b))
+print(c)
+
+d = dict(c)
+print(d)
+
+# ===========================================
+# change key name
+
+x = {'Senin': 'Monday', 'Selasa': 'Tuesday'}
+keys = list(x.keys())
+vals = list(x.values())
+# print(keys)
+keys[keys.index('Senin')] = 1
+print(keys)
+
+d = dict(zip(keys, vals))
+print(d)
