@@ -66,14 +66,3 @@ print(model.score(inputs_n, target))
 print(model.predict([[0,0,0]]))
 print(model.predict([[1,0,0]]))
 print(model.predict([[2,0,0]]))
-
-# draw the decision tree graph
-# import decision tree graph as .dot file
-tree.export_graphviz(
-    model.fit(inputs_n, target), 
-    out_file='15_DecisionTree.dot',
-    feature_names=['kantor_n', 'job_n', 'titel_n'],
-    class_names=['<10jt', '>10jt']
-)
-# go to https://dreampuf.github.io/GraphvizOnline 
-# to convert the .dot to .png/.svg/image!

@@ -24,3 +24,18 @@ if angka.isdigit():
         print('Angka', angka, 'tergolong GANJIL')
 else:
     print('Maaf input Anda tidak valid')
+
+# ==========================================
+
+a1 = float(input('Ketik angka 1 : '))
+op = input('Ketik operator ( + - x / ) : ')
+a2 = float(input('Ketik angka 2 : '))
+
+if op == '+':
+    print(f'{a1} {op} {a2} = {a1 + a2}')
+elif op == '-':
+    print(f'{a1} {op} {a2} = {a1 - a2}')
+elif op == '*':
+    print(f'{a1} {op} {a2} = {a1 * a2}')
+else:
+    print(f'{a1} {op} {a2} = {a1 / a2}')
