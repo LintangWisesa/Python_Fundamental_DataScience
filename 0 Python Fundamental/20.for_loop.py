@@ -11,6 +11,9 @@ for index in range(6, 10):  # range(start, stop)
 for data in range(1, 11, 2):    # range(start, stop, step)
     print('Haha ke-', data)
 
+for i in range(10, 0, -1):
+    print(i)
+
 #################################
 
 kawan = ['Andi', 'Budi', 'Caca']
@@ -28,3 +31,4 @@ for i in range(10):
         print('Wow!')
     else:
         print(i)
+
