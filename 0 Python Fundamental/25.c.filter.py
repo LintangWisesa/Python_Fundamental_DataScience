@@ -22,8 +22,17 @@ print(list(z))
 
 x = [1, 2, 3, 4, 5, 99]
 y = [1, 2, 6, 7, 8, 99]
+
 z = list(filter(lambda a: a in x, y))
-# print(z)
+print(z)
+
+z = []
+for i in y:
+  if i in x:
+    z.append(i)
+print(z)
+
+############################
 
 z = list(filter(lambda x: True if x<3 else False, x))
 print(z)

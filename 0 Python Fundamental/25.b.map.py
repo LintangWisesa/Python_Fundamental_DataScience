@@ -1,12 +1,38 @@
-# map python
-def y(a):
-    return len(a)
-a = ['Andilala', 'Budiman', 'Caca']
-x = map(y, a)
-# print(x)
-# print(list(x))
 
-########################################
+# MAP: menerapkan suatu function thd tiap elemen dalam iterable value
+
+x = [1, 2, 3, 4, 5]
+
+def jumlah(i):
+    return i + i
+y = map(jumlah, x)
+print(list(y))
+
+z = map(lambda a: a + a, x)
+print(list(z))
+
+#################################
+
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+
+def jumlah(i, j):
+    return i + j
+
+z = map(jumlah, x, y)
+print(list(z))
+
+##################################
+
+def addition(n): 
+    return n + n 
+  
+# We double all numbers using map() 
+numbers = (1, 2, 3, 4) 
+result = map(addition, numbers) 
+print(list(result)) 
+
+#######################################
 
 a = ['Cokelat', 'Melon', 'Nangka']
 b = ['Apel', 'Jeruk', 'Nanas']
@@ -32,10 +58,10 @@ y = map(lambda x : x ** 2, x)
 
 ######################################
 
-x = pow(2, 2)
-y = pow(3, 3)
-print(x)
-print(y)
-
 z = list(map(pow, [2, 3], [2, 3]))
+print(z)
+
+a = [1,2,3,4,5]
+b = [2,3,2,3,2]
+z = list(map(pow, a, b))
 print(z)

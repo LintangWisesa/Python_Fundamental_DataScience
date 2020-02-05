@@ -7,6 +7,23 @@ print(y(4))
 
 #######################################
 
+a = lambda: 5
+print(a())
+
+######################################
+
+listku = [
+    lambda: 1,
+    lambda: 2,
+    lambda: [4, 5, 6]
+]
+
+print(listku[0]())
+print(listku[2]())
+print(listku[2]()[1])
+
+#######################################
+
 x = lambda a : a + 10
 print(x(5))
 
@@ -50,3 +67,9 @@ def y(a):
         return False
 print(x(4))
 print(y(4))
+
+#########################################
+
+x = [1,2,3,4,5]
+y = lambda a: [print(i) for i in a]
+y(x)
