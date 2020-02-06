@@ -21,10 +21,14 @@ modelrf = RandomForestClassifier(n_estimators=10)
 
 # K-Fold, hasil akurasi akan berubah-ubah
 from sklearn.model_selection import KFold
-kf = KFold(n_splits=3) # jumlah 'lipatan'
+kf = KFold(n_splits=3) 
+# jumlah 'lipatan', max = jumlah sample.
+# lipatan = training set dibagi sejumlah k pada k-fold, misal k = 3 maka ada 3 set: A B C
+# model ditrain dg A & B, lalu divalidate dengan C, loop kombinasi, cari score, etc etc
 
-# for train_index, test_index in kf.split([1,2,3,4,5,6,7,8,9]):
-#     print(train_index, test_index)
+# contoh kfold
+# for train_index, validate_index in kf.split([1,2,3,4,5,6,7,8,9]):
+#     print(train_index, validate_index)
 
 def get_score(model, x_train, x_test, y_train, y_test):
     model.fit(x_train, y_train)

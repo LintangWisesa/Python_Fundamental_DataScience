@@ -21,26 +21,15 @@ modelrf = RandomForestClassifier(n_estimators=10)
 
 from sklearn.model_selection import cross_val_score
 
-print(cross_val_score(
-    modellr, digits['data'], digits['target'], cv=5)
-)
-print(cross_val_score(
-    modelsv, digits['data'], digits['target'], cv=5)
-)
-print(cross_val_score(
-    modelrf, digits['data'], digits['target'], cv=5)
-)
+# Scoring parameter can be checked here: 
+# https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter
 
-# rata2 score
-print(
-    np.mean(cross_val_score(
-        modellr, digits['data'], digits['target'], cv=5))
+print(cross_val_score(
+    modellr, digits['data'], digits['target'], cv=5, scoring='balanced_accuracy')
 )
-print(
-    np.mean(cross_val_score(
-        modelsv, digits['data'], digits['target'], cv=5))
+print(cross_val_score(
+    modelsv, digits['data'], digits['target'], cv=5, scoring='balanced_accuracy')
 )
-print(
-    np.mean(cross_val_score(
-        modelrf, digits['data'], digits['target'], cv=5))
+print(cross_val_score(
+    modelrf, digits['data'], digits['target'], cv=5, scoring='balanced_accuracy')
 )
