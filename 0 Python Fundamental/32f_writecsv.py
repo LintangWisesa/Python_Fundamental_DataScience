@@ -13,6 +13,15 @@ listku = [
 # writerow: write satu data
 # with open('gudang.csv', 'w', newline = '') as fileku:
 #     tulis = csv.writer(fileku)
+#     tulis.writerow(listku[1])
+
+# append untuk writerow: write satu data
+# with open('gudang.csv', 'a', newline = '') as fileku:
+#     tulis = csv.writer(fileku)
+#     tulis.writerow(listku[1])
+
+# with open('gudang.csv', 'w', newline = '') as fileku:
+#     tulis = csv.writer(fileku)
 #     for i in listku:
 #         tulis.writerow(i)
 

@@ -10,7 +10,7 @@ count_matrix = cv.fit_transform(text)
 print(cv.get_feature_names())
 print(count_matrix.toarray())
 
-# ['london', 'paris']
+# ['london', 'Paris']
 # [[2 1]
 #  [1 2]]
 # This indicates that the word ‘london’ occurs 2 times in A and 1 time in B. 
