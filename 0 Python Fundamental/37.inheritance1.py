@@ -17,7 +17,7 @@ class Y(X):
 # cara 3
 class Y(X):
     def __init__(self, nama, gelar):
-        super().__init__(self, nama, gelar)
+        super().__init__(nama, gelar)
 
 objX = X('Andi', 'Prof')
 objY = Y('Budi', 'Dr.')

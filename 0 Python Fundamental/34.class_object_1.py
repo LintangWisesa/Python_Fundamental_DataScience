@@ -17,3 +17,16 @@ print(andi.usia)
 budi = Siswa()
 print(andi.nama)
 print(andi.usia)
+
+#############################################
+
+# prop that values are not a primitive var
+class X:
+    a = [1,2,3,4,5]
+    b = {'nama': 'Andi'}
+
+obj = X()
+print(obj.a)
+print(obj.b)
+print(obj.a[0])
+print(obj.b['nama'])

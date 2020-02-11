@@ -22,7 +22,7 @@ objX = Y('Andi', 'Prof', 'UGM')
 
 ########################################
 
-lass Manusia:
+class Manusia:
     def __init__(self, nama):
         self.nama = nama
 

@@ -1,4 +1,5 @@
 import xlsxwriter
+# pip install xlsxwriter
 
 workbook = xlsxwriter.Workbook('32z2.xlsx')     # file name
 worksheet = workbook.add_worksheet('Data')      # sheet name
