@@ -10,6 +10,7 @@ print(x.strftime("%d")) # tanggal
 print(x.strftime("%B")) # bulan full name
 print(x.strftime("%m")) # bulan index
 print(x.strftime("%Y")) # tahun
+print(x.strftime('%y')) # tahun 2 digit plg blkg
 
 print(x.strftime("%H")) # jam sistem 24
 print(x.strftime("%I")) # jam sistem 12

@@ -35,3 +35,18 @@ objA = Manusia('Andi')
 objB = Pria('Andi')
 print(vars(objA))
 print(vars(objB))
+
+####################################
+
+class A():
+    nama = 'Andi'
+    def __init__(self, kota):
+        self.kota = kota
+
+class B(A):
+    def __init__(self, kota, prodi):
+        A.__init__(self, kota)
+        self.prodi = prodi
+
+objB = B('Jakarta', 'Teknik SIpil')
+print(objB.nama, objB.kota, objB.prodi)
