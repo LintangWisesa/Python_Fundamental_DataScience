@@ -10,6 +10,7 @@ mycol = mydb["users"]
 myquery = { "nama": "Andi" }
 mydoc = mycol.find(myquery)                 # all props
 # mydoc = mycol.find(myquery, {'nama':1})   # only nama prop
+# mydoc = mycol.find(myquery, {'nama':1, 'usia':1})   # only nama & usia prop
 
 for x in mydoc:
   print(x)
