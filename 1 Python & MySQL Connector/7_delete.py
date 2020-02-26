@@ -10,7 +10,8 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 sql = "DELETE FROM users WHERE nama = %s"
-nama = ('Deni', )
+nama = ('Deni', )     # must be a tuple
+# nama = 'Bambang',   # this is a tuple too
 mycursor.execute(sql, nama)
 
 mydb.commit()

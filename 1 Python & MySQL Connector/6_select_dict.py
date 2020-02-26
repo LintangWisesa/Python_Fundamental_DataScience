@@ -12,9 +12,4 @@ mycursor = mydb.cursor(dictionary=True)
 mycursor.execute("SELECT * FROM users")
 myresult = mycursor.fetchall()
 
-for x in myresult:
-  print(x)
-
-# print(list(map(lambda x: x[0], myresult)))
-
-print(mycursor.fetchone())
+print(list(myresult))
