@@ -11,7 +11,23 @@ print(np.sort(y)[::-1])
 x.sort(reverse=True)
 print(x)
 
+# ============================================
 
+x = [
+    [10, 2, 39],
+    [21, 7, 9],
+    [3, 1, 12]
+]
+x = np.array(x)
+print(x)
+y = np.sort(x, axis=1)  # 0 by col, 1 by row, axis default 1
+print(y)
+y = np.sort(x, axis=0)
+print(y)
+y = np.sort(x, axis=None)
+print(y)
+
+# ============================================
 
 # sort along the first axis 
 a = np.array([[12, 15], [10, 1]]) 

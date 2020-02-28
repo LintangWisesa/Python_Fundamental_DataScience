@@ -1,6 +1,9 @@
 import numpy as np
 
 # =====================================================
+# 0. all val dalam numpy array memiliki type yg sama (homogen) 
+
+# =====================================================
 # 1. numpy arrat dpt dibuat dr set, 
 #    tp tetap sifat set = no index
 

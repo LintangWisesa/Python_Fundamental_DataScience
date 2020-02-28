@@ -10,8 +10,10 @@ x2 = np.random.rand(2,4)    # 2 array with 4 random (0-1) val on each array
 print(x1)
 print(x2)
 
+y0 = np.random.randint(10)  # output = an int, not an array!
 y1 = np.random.randint(10, size=10)
 y2 = np.random.randint(10, size=(2,5))  # (2,5) = shape, dim1 2 random elements & dim2 5 random elements
 
+print(y0)
 print(y1)
 print(y2)
