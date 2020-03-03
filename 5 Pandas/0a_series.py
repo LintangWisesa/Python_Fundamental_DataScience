@@ -23,6 +23,12 @@ print(z['a'])
 # print(z)
 # print(z['a'])
 
+# =============================================
+
+x = {'a':0, 'b':1, 'c':2, 'd':3, 'f':4, 'g':5}
+xs = pd.Series(x)   # series from dict
+print(xs)
+
 a = [9,2,5,3,4]
 b = pd.Series(
     data = {'a': 2, 'b': 3},    # from dict

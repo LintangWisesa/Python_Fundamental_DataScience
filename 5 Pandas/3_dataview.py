@@ -21,6 +21,7 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(list(df.columns))
 
 # print(df.values)      # it will return a numpy array!
+# print(df.info())
 # print(df.describe())
 # print(df.describe().loc['mean'])
 
@@ -29,6 +30,7 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df['Gaji'].mean())
 # print(df['Gaji'].median())
 # print(df['Gaji'].mode())
+# print(df['Gaji'].std())
 
 # print(df.sort_index(axis=0, ascending=False))     # axis=0 index row
 # print(df.sort_index(axis=1, ascending=False))     # axis=0 index col
@@ -46,7 +48,7 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # set suatu col mjd index, tapi col tetap exist 
 # df.index = df['A']
 
-# loc = memanggil baris/kol dg NAMA indexnya!
+# loc[row,col] = memanggil baris/kol dg NAMA indexnya!
 # ================================================= 
 
 # print(df.loc[0])
@@ -58,16 +60,19 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.loc[:,['A','B']])
 # print(df.loc['20130102':'20130104',['A','B']])
 
-# iloc = memanggil baris/kol dg urutan index, harus INTEGER
+# iloc[row,col] = memanggil baris/kol dg urutan index, harus INTEGER
 # =================================================
 
 # print(df.iloc[3])
+# print(df.iloc[1,1])
 # print(df.iloc[3:5,0:2])
 # print(df.iloc[[1,2,4],[0,2]])
 # print(df.iloc[1:3,:])
 # print(df.iloc[:,1:3])
-# print(df.iloc[1,1])
 
+# at[row, col] & iat[row, col]
+# =================================================
+ 
 # manggil value dg nama index & nama kolom
 # print(df.at[dates[0],'A'])
 

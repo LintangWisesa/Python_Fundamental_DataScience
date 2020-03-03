@@ -15,4 +15,4 @@ print(df2.dtypes)
 print(df2.shape)
 
 # change datatype!
-df2['gaji'] = df['gaji'].astype('int64')
+df2['gaji'] = df2['gaji'].astype('int64')
