@@ -12,7 +12,7 @@ import numpy as np
 a = np.array([[1,1,-1], [1,2,1], [2,1,1]])
 b = np.array([-3,7,4])
 
-hasil = np.linalg.solve(a, b)
-print('x = ', hasil[0])
-print('y = ', hasil[1])
-print('z = ', hasil[2])
+x, y, z = np.linalg.solve(a, b)
+print('x = ', x)
+print('y = ', y)
+print('z = ', z)
