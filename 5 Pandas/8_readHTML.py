@@ -14,11 +14,11 @@ df = pd.read_html('http://digidb.io/digimon-list/')
 print(df[0])
 
 # ====================================
-# read tables from http url
+# read tables (>1 table) from http url
 df = pd.read_html('https://www.skysports.com/football/tables')
 print(len(df))
 print(df[0])
-print(df[1])
+print(df[3])
 
 # ====================================
 # read from https url using requests

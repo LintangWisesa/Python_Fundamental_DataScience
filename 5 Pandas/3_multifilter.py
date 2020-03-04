@@ -17,6 +17,11 @@ dfData = pd.DataFrame(
     index = list('abcde')
     )
 
+# nilai unique di col nama & nilai
+print(dfData['nama'].unique())
+print(dfData['nilai'].unique())
+
+# multifilter
 print(dfData
     .iloc[0:5:2]
     .sort_values(

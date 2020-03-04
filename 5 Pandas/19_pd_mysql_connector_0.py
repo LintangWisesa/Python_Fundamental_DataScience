@@ -14,12 +14,13 @@ query = '''
 select * from employees
 '''
 
-# df = pd.read_sql(query, mydb)
+df = pd.read_sql(query, mydb)
 # df = pd.read_sql(query, con=mydb)
-# print(df)
+print(df)
 
-# =======================
+# ===================================
 # using mysqlclient & db url
+
 # pip install mysqlclient
 # conda install -c anaconda mysqlclient
 df = pd.read_sql(query, "mysql://lintang:12345@localhost:3306/pandas_tes")
