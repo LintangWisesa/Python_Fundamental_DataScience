@@ -19,9 +19,9 @@ df = pd.read_sql(query, mydb)
 print(df)
 
 # ===================================
-# using mysqlclient & db url
+# using mysqlclient sqlalchemy & db url
 
-# pip install mysqlclient
+# pip install mysqlclient sqlalchemy
 # conda install -c anaconda mysqlclient
 df = pd.read_sql(query, "mysql://lintang:12345@localhost:3306/pandas_tes")
 print(df)

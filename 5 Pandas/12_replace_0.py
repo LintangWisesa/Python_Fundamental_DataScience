@@ -5,7 +5,11 @@ import numpy as np
 df = pd.read_csv('10_data_NaN.csv')
 
 # replace all '-' & 'n.a' to 0
-df2 = df.replace(['-', 'n.a'], 0)
+# df2 = df.replace(['-', 'n.a'], 0)
+# print(df2)
+
+# replace all '-' & 'n.a' to NaN
+df2 = df.replace(['-', 'n.a'], np.NaN)
 print(df2)
 
 # replace all '-' & 'n.a' to NaN
@@ -15,7 +19,8 @@ print(df2)
 # replace a specific val to another specific val
 # df2 = df.replace({
 #     '-': 0,
-#     'n.a': 'No Data'
+#     'n.a': 'No Data',
+#     np.NaN: 'OK'
 # })
 # print(df2)
 
@@ -25,12 +30,6 @@ print(df2)
 #     'kolom2': 'n.a',
 # }, np.NaN)
 # print(df2)
-
-# replace with ffill method!
-# df2 = df.replace(
-#     to_replace=['-', 'n.a'],
-#     method = 'ffill'
-# )
 
 # replace val di kolom tertentu dg val tertentu
 # kolom nama '-' menjadi 'Anonim'
@@ -46,3 +45,10 @@ print(df2)
 #     'usia': 0,
 #     'massa': [0, 'data tak ada']
 # })
+
+# replace with ffill method!
+# df2 = df.replace(
+#     to_replace=['-', 'n.a'],
+#     method = 'ffill'
+# )
+

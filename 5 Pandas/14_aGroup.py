@@ -20,6 +20,8 @@ df = pd.DataFrame(data)
 # group dataframe by 'kota'
 g = df.groupby('kota')
 
+print(g.describe())
+
 # get group names
 # print(g.groups.keys())
 
@@ -32,6 +34,7 @@ g = df.groupby('kota')
 # print(g.mean())
 
 # print(g.min(numeric_only='int'))
+# print(g.min(numeric_only='int')['suhu'])
 # print(g.min(level='suhu'))
 
 # get suhu max di bandung with group & not
