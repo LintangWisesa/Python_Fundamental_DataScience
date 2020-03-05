@@ -17,10 +17,9 @@ data = [
 ]
 df = pd.DataFrame(data)
 
+# ============================================
 # group dataframe by 'kota'
 g = df.groupby('kota')
-
-print(g.describe())
 
 # get group names
 # print(g.groups.keys())
@@ -28,7 +27,11 @@ print(g.describe())
 # show data for Jakarta
 # print(g.get_group('Jakarta'))
 
+# show 1st val for each group
+print(g.first())
+
 # # show max val for each data in each kota
+# print(g.describe())
 # print(g.max())
 # print(g.min())
 # print(g.mean())
@@ -42,4 +45,4 @@ print(g.describe())
 # print(df[df['kota'] == 'Bandung']['suhu'].max())
 
 # get data bandung when suhu = max
-print(df[df['kota'] == 'Bandung'].sort_values(by='suhu').iloc[0])
+# print(df[df['kota'] == 'Bandung'].sort_values(by='suhu').iloc[0])
