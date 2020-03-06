@@ -1,4 +1,5 @@
 # concat 2 dataframe yg sama dimensi & key propsnya!
+# concat = horizonta;/vertical stack bbrp df
 
 import pandas as pd 
 import matplotlib.pyplot as plt
@@ -19,7 +20,6 @@ bali = pd.DataFrame(bali)
 
 # df = pd.concat([jawa, bali], sort=False)
 # print(df)
-# print(df)
 # print(df.loc[1])  # index 1 nya ada 2!!!
 
 # urutkan indexnya
@@ -31,4 +31,4 @@ print(df)
 # print(df.loc['jawa'])
 # print(df.loc['bali'])
 # print(df.loc['jawa', 0])
-# print(df.loc['bali', 1])
+# print(df.loc['bali', 1]['suhu'])

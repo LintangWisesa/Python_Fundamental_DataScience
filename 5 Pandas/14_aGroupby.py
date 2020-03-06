@@ -18,20 +18,30 @@ data = [
 df = pd.DataFrame(data)
 
 # ============================================
+# group dataframe bisa dilakukan dg set index, asalkan data sudah urut sesuai groupnya
+# df = df.set_index('kota')
+# df = df.set_index(['kota', 'provinsi'])
+# print(df)
+
+# ============================================
 # group dataframe by 'kota'
 g = df.groupby('kota')
 
 # get group names
+# print(g.groups) # dict
 # print(g.groups.keys())
+# print(g.groups.values())
 
 # show data for Jakarta
 # print(g.get_group('Jakarta'))
 
-# show 1st val for each group
+# show 1st & last val for each group
 print(g.first())
+# print(g.last())
 
 # # show max val for each data in each kota
 # print(g.describe())
+# print(g.count())
 # print(g.max())
 # print(g.min())
 # print(g.mean())

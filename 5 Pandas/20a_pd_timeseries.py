@@ -38,5 +38,4 @@ print(baris)
 # ubah kolom waktu menjadi datetime
 
 df['waktu'] = pd.to_datetime(newData['waktu'])
-
 df['waktu'] = newData['waktu'].astype('datetime64')

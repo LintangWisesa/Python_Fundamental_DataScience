@@ -1,4 +1,4 @@
-# show frequences
+# show frequences & relationships
 import pandas as pd 
 
 data = [
@@ -16,7 +16,7 @@ data = [
 
 df = pd.DataFrame(data)
 
-# print(pd.crosstab(df.kota, df.status))
+print(pd.crosstab(df.kota, df.status))
 # print(pd.crosstab(df['kota'], df['status']))
 
 # print(pd.crosstab(df.sex, df.status, margins=True))

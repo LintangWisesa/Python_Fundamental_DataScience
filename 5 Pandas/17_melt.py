@@ -11,14 +11,14 @@ dataSuhu = [
 ]
 
 df = pd.DataFrame(dataSuhu)
-print(df)
+# print(df)
 
 # basic melt
-# df1 = pd.melt(df, id_vars=['hari'])
-# print(df1)
+df1 = pd.melt(df, id_vars=['hari'])
+print(df1)
 # print(df1[df1['kota'] == 'Bandung'])
 
 # custom melt with var & val name
 df1 = pd.melt(df, id_vars=['hari'], var_name='kota', value_name='suhu')
 print(df1)
-print(df1[df1['kota'] == 'Bandung'])
+# print(df1[df1['kota'] == 'Bandung'])
