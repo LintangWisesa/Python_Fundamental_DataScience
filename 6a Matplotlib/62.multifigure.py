@@ -38,6 +38,7 @@ plt.plot(names, values)
 plt.title('Plot 3')
 
 plt.suptitle('Categorical Plotting')
+# plt.suptitle('Categorical Plotting', y=1.1, va='top', ha='left')
 
 # =========================================
 

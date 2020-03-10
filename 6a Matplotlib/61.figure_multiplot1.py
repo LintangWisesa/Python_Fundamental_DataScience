@@ -20,4 +20,5 @@ plt.plot(names, values)
 plt.title('Plot 3')
 
 plt.suptitle('Categorical Plotting')
+plt.tight_layout() # jarak equal & nice
 plt.show()

@@ -18,14 +18,15 @@ b = [1,4,9,3,5,8,4,2,5]
 # * : star
 # . : dot
 # + : plus
+# $lintang$ : text 'lintang'
 
 # g: green, b: blue, r: red, y: yellow, k: black
 # warna dg hexcode: #FF0000, #00FF00, #000000 dst
 # warna dg nama: grey, gray, lightblue
 
-# 'gs:'  =>  color green, marker square, line .... 
-# 'g:s'  =>  color green, marker square, line ....
-# 'r*--' =>  color red, marker star, line ---- 
+# 'gs:'  =>  color green, marker square, linesytle .... 
+# 'g:s'  =>  color green, marker square, linestyle ....
+# 'r*--' =>  color red, marker star, linestyle ---- 
 
 plt.plot(a,a,'g--', a,a**2,'r--', a,a**3,'bs', a,a**3,'y--')
 # plt.plot(a,a,'g-o', a,a**2,'r-*', a,a**3,'bs', a,a**3,'y-^')
