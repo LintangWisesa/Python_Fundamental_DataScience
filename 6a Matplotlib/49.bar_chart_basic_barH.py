@@ -13,7 +13,7 @@ plt.barh(x, z, label='Diagram 2', color='c') # cyan
 # )
 # plt.barh(x, y, 
 #     color=['r', 'g', 'b', 'y', 'k'], 
-#     edgecolor='black', linewidth=5,
+#     edgecolor='black', linewidth=5, height=0.3
 # )
 
 plt.title('Tes Plotting Data\nby Lintang Wisesa')

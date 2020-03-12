@@ -60,3 +60,7 @@ print(y.symmetric_difference(x))
 # soal:
 # https://brainly.co.id/tugas/7707409
 # https://brainly.co.id/tugas/12307211
+
+x = {1,3,5,7,9}
+y = {2,3,5,7}
+print((x | y)-(x & y))
