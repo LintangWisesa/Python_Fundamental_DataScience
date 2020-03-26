@@ -3,8 +3,8 @@
 
 # or:
 # 1. go here https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud
-# 2. find wordcloud & download sesuai os & versi python, misal wordcloud-1.6.0-cp38-cp38-win32
-# 3. go to folder download, eksekusi: py -m pip install wordcloud-1.6.0-cp38-cp38-win32
+# 2. find wordcloud & download sesuai os & versi python, misal wordcloud-1.6.0-cp38-cp38-win32.whl
+# 3. go to folder download, eksekusi: py -m pip install wordcloud-1.6.0-cp38-cp38-win32.whl
 
 import numpy as np
 import pandas as pd
