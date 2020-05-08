@@ -32,22 +32,6 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df['Gaji'].mode())
 # print(df['Gaji'].std())
 
-# print(df.sort_index(axis=0, ascending=False))     # axis=0 index row
-# print(df.sort_index(axis=1, ascending=False))     # axis=0 index col
-
-# print(df.sort_values(by='B'))
-# print(df.sort_values(by='B', ascending=False))
-# print(df.sort_values(by=['B', 'A'], ascending[]=False))
-# print(df.sort_values(by=['B', 'A'], ascending=[False, True]))
-
-# df = df.set_index('kolom1')           
-# atau bisa pakai inplace=True untuk set df
-# df.set_index('kolom1', inplace=True)
-# print(df)
-
-# set suatu col mjd index, tapi col tetap exist 
-# df.index = df['A']
-
 # loc[row,col] = memanggil baris/kol dg NAMA indexnya!
 # ================================================= 
 
@@ -80,3 +64,24 @@ df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
 # print(df.iat[1,1])
 
 # print(df.T) # transposing data
+
+
+
+# sortir data
+# ========================================
+
+# print(df.sort_index(axis=0, ascending=False))     # axis=0 index row
+# print(df.sort_index(axis=1, ascending=False))     # axis=0 index col
+
+# print(df.sort_values(by='B'))
+# print(df.sort_values(by='B', ascending=False))
+# print(df.sort_values(by=['B', 'A'], ascending[]=False))
+# print(df.sort_values(by=['B', 'A'], ascending=[False, True]))
+
+# df = df.set_index('kolom1')           
+# atau bisa pakai inplace=True untuk set df
+# df.set_index('kolom1', inplace=True)
+# print(df)
+
+# set suatu col mjd index, tapi col tetap exist 
+# df.index = df['A']

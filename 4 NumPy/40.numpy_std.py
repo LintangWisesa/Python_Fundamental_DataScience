@@ -1,7 +1,15 @@
 
-# standard deviation = nilai ralat/error
+# Stdev = Merupakan jarak rata-rata dari mean.
 import numpy as np
 
-a = np.array([(1,2,3),(4,5,6)])
+d = [11, 11, 12, 13, 14]
+d = np.array(d)
 
-print(np.std(a))
+# hitung manual
+meanD = np.mean(d)
+sumsel2 = np.sum((d - meanD) ** 2)
+stdv = np.sqrt(sumsel2 / (len(d) - 1))
+print(stdv)
+
+# hitung numpy
+print(np.std(d, ddof=1))

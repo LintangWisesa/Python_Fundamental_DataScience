@@ -13,8 +13,8 @@ if len(x) % 2 != 0:
     median = x[len(x)//2]   # x[round(len(x)/2)-1]
     print(median)
 else:
-    i = (len(x) + 1) // 2
-    median = (x[i] + x[i+1]) / 2
+    i = len(x) // 2
+    median = (x[i] + x[i-1]) / 2
     print(median)
 
 # ========================

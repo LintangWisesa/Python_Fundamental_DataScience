@@ -12,17 +12,14 @@
     </div>
 </body>
 
-<!-- jquery -->
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-
-<!-- d3.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.11.0/d3.js" integrity="sha256-cWwi30eyRTyVagkLLAwXp92jxARPpGH3u+5Vr0UJtGQ=" crossorigin="anonymous"></script>
+<!-- jquery (from bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
 <!-- plotly.js -->
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- d3.js -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
 
 <script type="text/javascript">
     var graphs = {{ graphJSON | safe }}

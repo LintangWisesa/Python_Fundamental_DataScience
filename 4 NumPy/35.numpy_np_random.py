@@ -6,6 +6,7 @@ print(a1)
 
 x1 = np.random.rand(10)     # random 10 elements which value between 0-1
 x2 = np.random.rand(2,4)    # 2 array with 4 random (0-1) val on each array
+x3 = np.random.randn(2,4)   # random dg distribusi normal
 
 print(x1)
 print(x2)
