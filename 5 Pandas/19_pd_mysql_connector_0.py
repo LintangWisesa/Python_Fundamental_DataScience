@@ -1,4 +1,6 @@
 # pip install mysql-connector-python
+# conda install -c anaconda mysql-connector-python
+
 import pandas as pd
 import mysql.connector
 

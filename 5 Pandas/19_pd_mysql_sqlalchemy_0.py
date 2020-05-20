@@ -1,4 +1,7 @@
-# pd.read_sql
+# pd.read_sql()
+
+# pip install sqlalchemy
+# conda install -c anaconda sqlalchemy
 
 import pandas as pd
 import sqlalchemy
