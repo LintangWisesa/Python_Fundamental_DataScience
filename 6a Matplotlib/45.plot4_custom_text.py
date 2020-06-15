@@ -17,7 +17,7 @@ plt.ylabel('Nilai y')
 # custom text
 plt.text(0, 0, 'titik\nawal')
 plt.text(0,10,'titik maksimal', color='red', fontsize=18)
-plt.text(2,4,'tes',fontdict={'color':'red', 'family':'impact'})
+plt.text(2,4,'tes',fontdict={'color':'red', 'family':'impact', 'size':20})
 
 for i in x:
     plt.text(i-.1, y[i-1]+.8, y[i-1])

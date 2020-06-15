@@ -18,6 +18,7 @@ b = [1,4,9,3,5,8,4,2,5]
 # * : star
 # . : dot
 # + : plus
+# D : diamond
 # $lintang$ : text 'lintang'
 
 # g: green, b: blue, r: red, y: yellow, k: black

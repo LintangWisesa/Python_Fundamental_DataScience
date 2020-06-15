@@ -8,12 +8,13 @@ z = [1, 3, 5, 7, 9]
 
 plt.bar(x, y, label='Diagram 1', color='r') # red
 plt.bar(x, z, label='Diagram 2', color='c') # cyan
+# plt.bar(x, y, label='Data 1', color='rgbkyr')
 # plt.bar(x, y, label='Data 1', 
 #     color=['r', 'g', 'b', 'k', 'y', 'r']
 # )
 # plt.bar(x, y, 
 #     color=['r', 'g', 'b', 'y', 'k'], 
-#     edgecolor='black', linewidth=5,
+#     linewidth=5, edgecolor='black',    # edgecolor = 'rgbyk' ['r','g','b'] 
 # )
 
 plt.title('Tes Plotting Data\nby Lintang Wisesa')

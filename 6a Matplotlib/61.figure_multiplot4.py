@@ -5,8 +5,21 @@ import matplotlib.pyplot as plt
 x = [1,2,3,4,5,6,7,8,9]
 y = [0,4,9,3,5,8,4,10,5]
 
-# subplot2grid(figureShape(row,col), plotLocation(row,col))   
-# NOTE: index location start from 0
+# plt.subplot2grid(figureShape(rows, cols), plotPosition(rows, cols))
+# plotPosition: index starts from 0
+
+plotA = plt.subplot2grid((2, 1), (0, 0))
+plotA.plot(x, y)
+
+plotB = plt.subplot2grid((2, 1), (1, 0))
+plotB.scatter(x, y)
+
+plt.show()
+
+# ================================================================
+
+# subplot2grid(figureShape(row,col), plotPosition(row,col))   
+# NOTE: index position start from 0
 
 # ax1 = plt.subplot2grid((1,1), (0,0))
 ax1 = plt.subplot2grid((2,2), (1,1))
